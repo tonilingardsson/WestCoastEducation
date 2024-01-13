@@ -1,3 +1,17 @@
+/* Light Mode Styles */
+body.light-mode {
+    background-color: #fff;
+    color: #333;
+    /* Add other light mode styles */
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+    /* Add other dark mode styles */
+}
+
 body {
     background-color: #f5f5f5;
     font-family: Arial, sans-serif;
