@@ -1,17 +1,3 @@
-/* Light Mode Styles */
-body.light-mode {
-    background-color: #fff;
-    color: #333;
-    /* Add other light mode styles */
-}
-
-/* Dark Mode Styles */
-body.dark-mode {
-    background-color: #333;
-    color: #fff;
-    /* Add other dark mode styles */
-}
-
 /* Global styles */
 body {
     font-family: Arial, sans-serif;
@@ -21,4 +7,61 @@ body {
 
 h1 {
     text-align: center;
+}
+
+nav {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+/* Light Mode Styles */
+body.light-mode {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+nav.light-mode {
+    background-color: #a9a9a9;
+    color: #333;
+}
+
+nav a.light-mode {
+    color: #333;
+}
+
+#theme-toggle-btn.light-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+nav.dark-mode {
+    background-color: #f5f5f5;
+    color: #fff;
+}
+
+nav a.dark-mode {
+    color: #fff;
+}
+
+#theme-toggle-btn.dark-mode {
+    background-color: #fff;
+    color: #333;
 }
