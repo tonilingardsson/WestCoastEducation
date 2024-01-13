@@ -12,10 +12,11 @@ body.dark-mode {
     /* Add other dark mode styles */
 }
 
+/* Global styles */
 body {
-    background-color: #f5f5f5;
     font-family: Arial, sans-serif;
-
+    margin: 0;
+    padding: 20px;
 }
 
 h1 {
