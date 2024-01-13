@@ -1,3 +1,5 @@
+console.log('Script loaded');
+
 // Theme toggle button
 document.addEventListener('DOMContentLoaded', function() {
     const themeToggleBtn = document.getElementById('theme-toggle-btn');
