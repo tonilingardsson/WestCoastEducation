@@ -1,0 +1,17 @@
+[
+    {
+      "id": 1,
+      "name": "Jenni Pulli",
+      "email": "jenni.pulli@westcoast.edu"
+    },
+    {
+        "id": 101,
+        "name": "Michael Gustavsson",
+        "email": "michael.gustavsson@westcoast.edu"
+      },
+      {
+        "id": 102,
+        "name": "Sara Simeone",
+        "email": "sara.simeone@westcoast.edu"
+      }
+    ]  
