@@ -91,4 +91,4 @@ Dessutom behöver vi tillgång till attkunnalista vilka kundersom har bokat sig 
 
 FUNKTIONSKRAV
 
-Vi vill att applikationen skall fungera i alla moderna webbläsare och gå att använda i olika skärmstorlekar och i olika enheter. Det är jätteviktigt att applikationen är responsiv, vår gamla applikation var inte detta och vi fick väldigt mycket kritik för detta.
+Vi vill att applikationen skall fungera i alla moderna webbläsare och gå att använda i olika skärmstorlekar och i olika enheter. Det är jätteviktigt att applikationen är responsiv, vår gamla applikation var inte detta och vi fick väldigt mycket kritik för detta.699
