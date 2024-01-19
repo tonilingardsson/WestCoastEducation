@@ -1,12 +1,19 @@
+console.log('App.js is connected!');
+import listAllCourses from './data/courses.js';
+import listAllStudents from './data/students.js';
+import listAllTeachers from './data/teachers.js';
+import { createCard, createImage, createCourseInfo } from './dom.js';
 
 // Global variables. Courses, teachers, and students.
-const gallery = document.querySelector('#courses-gallery');
+const coursesGallery = document.querySelector('#courses-gallery');
+const studentsGallery = document.querySelector('#students-gallery');
+const teachersGallery = document.querySelector('#teachers-gallery');
 
 async function initPage() {
     // Load data
-    const courses = await loadCourses();
-    // const teachers = loadTeachers();
-    // const students = loadStudents();
+    const courses = await listAllCourses();
+    const students = await listAllStudents();
+    const teachers = await listAllTeachers();
     courses.forEach((course) => {
         // Add courses to page
         const courseCard = createCourseCard(course);
@@ -19,7 +26,7 @@ async function initPage() {
     });
 }
 
-const loadCourses = async () => {
+const listAllCourses = async () => {
     // Funtion to fetch courses data from db.json
     const url = 'http://localhost:3000/courses';
     // Indicating where to get the data from (above)

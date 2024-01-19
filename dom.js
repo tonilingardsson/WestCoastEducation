@@ -2,6 +2,7 @@
 // DOM Manipulation
 /*******************************************************************************/
 //     Create card function with couse as argument
+console.log('DOM.js is connected!');
 const createCard = (course) => {
 //     Create card/div for each course
     const card = document.createElement('div');
@@ -35,5 +36,22 @@ const createCourseInfo = (course) => {
     return courseInfo;
 }
 
+const addImageHandler = (images) => {
+    images.forEach((image) => {
+        const src = image.getAttribute('src');
+        // Here it used id, so I need to call "id" 
+        // to get the id of the all images: courses, students, and teachers.
+        const id = image.getAttribute('id');
+
+        image.addEventListener('click', () => {
+            alert(`This object had the id:${id} and the picture's source is: ${src} - `);
+        });
+    });
+    // const image = event.target;
+    // const id = image.getAttribute('id');
+    // window.location.href = `course.html?id=${id}`;
+};
+
 // Export the functions to be used in other files
-export { createCard, createImage, createCourseInfo };
+// This export type is called "named export"
+export { createCard, createImage, createCourseInfo, addImageHandler };
