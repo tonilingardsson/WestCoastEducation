@@ -3,48 +3,54 @@
     {
       "presential-courses": [
         {
-          "id": 1,
-          "name": "Web Development Fundamentals",
+          "id": 301,
+          "name": "Blockchain Development",
           "duration": "8 weeks",
           "teacherId": 101,
-          "averageRating": 4.5
+          "averageRating": 5,
+          "imageUrl": "/images/Blockchain.jpg"
         },
         {
-          "id": 2,
-          "name": "Blockchain Fundamentals",
+          "id": 302,
+          "name": "Cloud Computing",
           "duration": "8 weeks",
           "teacherId": 101,
-          "averageRating": 4.5
+          "averageRating": 4.5,
+          "imageUrl": "/images/CloudComputing1.jpg"
         },
         {
           "id": 3,
           "name": "Cybersecurity Fundamentals",
           "duration": "8 weeks",
           "teacherId": 101,
-          "averageRating": 4.5
+          "averageRating": 4.5,
+          "imageUrl": "/images/Cybersecurity.jpg"
         }
       ],
       "remote-courses": [
         {
           "id": 1,
-          "name": "Web Development Fundamentals",
-          "duration": "8 weeks",
-          "teacherId": 101,
-          "averageRating": 4.5
-        },
-        {
-          "id": 2,
-          "name": "Blockchain Fundamentals",
-          "duration": "8 weeks",
-          "teacherId": 101,
-          "averageRating": 4.5
-        },
-        {
-          "id": 3,
           "name": "Cybersecurity Fundamentals",
           "duration": "8 weeks",
           "teacherId": 101,
-          "averageRating": 4.5
+          "averageRating": 4.5,
+          "imageUrl": "/images/Cybersecurity.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Digital Marketing",
+          "duration": "8 weeks",
+          "teacherId": 101,
+          "averageRating": 4.5,
+          "imageUrl": "/images/DigitalMarketing1.jpg"
+        },
+        {
+          "id": 3,
+          "name": "IT Automation",
+          "duration": "8 weeks",
+          "teacherId": 101,
+          "averageRating": 4.5,
+          "imageUrl": "/images/ITAutomation1.jpg"
         }
       ]
     }
@@ -53,42 +59,52 @@
     {
       "id": 1001,
       "name": "Carl Klöfverskjöld",
-      "email": "carl.klofverskjold@linux.com"
+      "email": "carl.klofverskjold@linux.com",
+      "imageUrl": "/images/Student1.png"
+
     },
     {
       "id": 1002,
       "name": "Jelena Cefalù",
-      "email": "jelena.cefalu@crypto.com"
+      "email": "jelena.cefalu@crypto.com",
+      "imageUrl": "/images/Student2.png"
+
     },
     {
       "id": 1003,
       "name": "Jonathan Norberg",
-      "email": "jonathan.norberg@vinicius.com"
+      "email": "jonathan.norberg@vinicius.com",
+      "imageUrl": "/images/Student3.png"
     },
     {
       "id": 1004,
       "name": "Christian Lopez Noguera",
-      "email": "christian.lopez.noguera@colombia.com"
+      "email": "christian.lopez.noguera@colombia.com",
+      "imageUrl": "/images/Student4.png"
     },
     {
       "id": 1005,
       "name": "Alemayehu Wakjira",
-      "email": "alemayehu.wakjira@binance.com"
+      "email": "alemayehu.wakjira@binance.com",
+      "imageUrl": "/images/Student5.png"
     },
     {
       "id": 1006,
       "name": "Mikael Sundh",
-      "email": "mikael.sundh@nasa.com"
+      "email": "mikael.sundh@nasa.com",
+      "imageUrl": "/images/Student6.png"
     },
     {
       "id": 1007,
       "name": "Rowel Malmström",
-      "email": "rowel.malmstrom@hoodie.com"
+      "email": "rowel.malmstrom@hoodie.com",
+      "imageUrl": "/images/Student7.png"
     },
     {
       "id": 1008,
       "name": "Sebastian Flavet",
-      "email": "sebastian.flavet@artist.com"
+      "email": "sebastian.flavet@artist.com",
+      "imageUrl": "/images/Student8.png"
     },
     {
       "id": 1009,
