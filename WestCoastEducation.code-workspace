@@ -8,6 +8,7 @@
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "WestCoastEducation"
+		"liveServer.settings.multiRootWorkspaceName": "WestCoastEducation",
+		"liveServer.settings.port": 5501
 	}
 }
