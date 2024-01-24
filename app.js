@@ -73,3 +73,22 @@ import { createCard } from "./dom.js";
 //         }
 //     });
 // });
+// Fetch data from JSON-server
+fetch('http://localhost:3000/courses')
+.then(response => response.json())
+.then(courses => {
+  const coursesList = document.getElementById('courses-list');
+
+  // Render courses
+  courses.forEach(course => {
+    const courseDiv = document.createElement('div');
+    courseDiv.innerHTML = `
+      <div>
+        <h2>${course.name}</h2>
+        <p>${course.description}</p>
+      </div>
+    `;
+    coursesList.appendChild(courseDiv);
+  });
+})
+.catch(error => console.error('Error fetching courses:', error));
