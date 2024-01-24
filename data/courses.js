@@ -10,6 +10,6 @@ function initPage () {
 
 const listAllCourses = () => courses;
 // Export the functions to be used in other files
-export /* In this code snippet, `default` is used to export the `listAllCourses` function as the
+/* In this code snippet, `default` is used to export the `listAllCourses` function as the
 default export of the module. */
-default listAllCourses;
+// export default listAllCourses;

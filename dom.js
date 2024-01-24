@@ -2,18 +2,17 @@
 // DOM Manipulation
 /*******************************************************************************/
 //     Create card function with couse as argument
-console.log('DOM.js is connected!');
 const createCard = (course) => {
 //     Create card/div for each course
-    const card = document.createElement('div');
+    const div = document.createElement('div');
     // Add class to card
-    card.classList.add('course-card');
+    div.classList.add('course-card');
     // Add content: image. We need to create an image function!
-    card.appendChild(createImage(course.imageUrl, course.id));
+    div.appendChild(createImage(course.imageUrl, course.id));
     // Add content: title and info. We need to create a function that renders title and info function!
-    card.appendChild(createCourseInfo(course));
+    div.appendChild(createCourseInfo(course));
 
-    return card;
+    return div;
 }
 
 // The function to render the image
