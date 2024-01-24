@@ -6,26 +6,7 @@
     <title>West Coast Education | Utbildningsföretag sedan 1984 </title>
     <link rel="stylesheet" href="style.css" id="theme-style">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script>
-        // Fetch data from JSON-server
-        fetch('http://localhost:3000/courses')
-          .then(response => response.json())
-          .then(courses => {
-            const coursesList = document.getElementById('courses-list');
     
-            // Render courses
-            courses.forEach(course => {
-              const courseDiv = document.createElement('div');
-              courseDiv.innerHTML = `
-                <div>
-                  <h2>${course.name}</h2>
-                  <p>${course.description}</p>
-                </div>
-              `;
-              coursesList.appendChild(courseDiv);
-            });
-          })
-          .catch(error => console.error('Error fetching courses:', error));
       </script><script type="text/javascript" src="app.js" type="module" defer></script>
 </head>
 <body class="light-mode">
@@ -35,9 +16,7 @@
             <li><a href="#">Courses</a></li>
             <li><a href="students.html">Students</a></li>
 <li><a href="teachers.html">Teachers</a></li>
-            <!-- Add the theme toggle button here -->
-            <li><button id="theme-toggle-btn">Toggle Mode</button></li>
-        </ul>
+            </ul>
     </nav>
     <h1>West Coast Education</h1>
     <h2>IT School since 1984 </h2>
