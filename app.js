@@ -1,4 +1,3 @@
-
 import { createCard, addImageHandler } from "./dom.js";
 // import listAllCourses from './data/courses.js';
 // import listAllStudents from './data/students.js';

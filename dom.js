@@ -6,7 +6,7 @@ const createCard = (course) => {
 //     Create card/div for each course
     const div = document.createElement('div');
     // Add class to card
-    div.classList.add('course-card');
+    div.classList.add('course-image');
     // Add content: image. We need to create an image function!
     div.appendChild(createImage(course.imageUrl, course.id));
     // Add content: title and info. We need to create a function that renders title and info function!
@@ -29,21 +29,21 @@ const createImage = (imageUrl, id) => {
 };
 
 const createCourseInfo = (course) => {
-    const courseInfo = document.createElement('p');
-    courseInfo.appendChild(document.createTextNode(`${course.title} - ${course.info}`));
+    const paragraph = document.createElement('p');
+    paragraph.appendChild(document.createTextNode(`${course.name} - ${course.info}`));
     // courseInfo.classList.add('course-info');
-    return courseInfo;
-}
+    return paragraph;
+};
 
 const addImageHandler = (images) => {
     images.forEach((image) => {
         const src = image.getAttribute('src');
         // Here it used id, so I need to call "id" 
         // to get the id of the all images: courses, students, and teachers.
-        const id = image.getAttribute('id');
+        const courseId = image.getAttribute('id');
 
         image.addEventListener('click', () => {
-            alert(`This object had the id:${id} and the picture's source is: ${src} - `);
+            alert(`This couse has this id:${id} and the picture's source is: ${src} - `);
         });
     });
     // const image = event.target;
@@ -53,4 +53,4 @@ const addImageHandler = (images) => {
 
 // Export the functions to be used in other files
 // This export type is called "named export"
-export { createCard, createImage, createCourseInfo, addImageHandler };
+export { createCard, addImageHandler };

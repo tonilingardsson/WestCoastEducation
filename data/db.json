@@ -1,5 +1,28 @@
 {
-  "courses": [
+  "courses": [{
+    "id": 301,
+    "name": "Blockchain Development",
+    "duration": "8 weeks",
+    "teacherId": 101,
+    "averageRating": 5,
+    "imageUrl": "/images/Blockchain.jpg"
+  },
+  {
+    "id": 302,
+    "name": "Cloud Computing",
+    "duration": "8 weeks",
+    "teacherId": 101,
+    "averageRating": 4.5,
+    "imageUrl": "/images/CloudComputing1.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Cybersecurity Fundamentals",
+    "duration": "8 weeks",
+    "teacherId": 101,
+    "averageRating": 4.5,
+    "imageUrl": "/images/Cybersecurity.jpg"
+  },
     {
       "presential-courses": [
         {
@@ -120,27 +143,27 @@
   "teachers": [
     {
       "id": 1001,
-      "name": "Carl Klöfverskjöld",
-      "email": "carl.klofverskjold@linux.com",
-      "imageUrl": "/images/Student1.png"
+      "name": "Jenni Pulli",
+      "email": "jenni.pulli@thehawk.com",
+      "imageUrl": "/images/Teacher1.png"
     },
     {
       "id": 1002,
-      "name": "Jelena Cefalù",
-      "email": "jelena.cefalu@crypto.com",
-      "imageUrl": "/images/Student1.png"
+      "name": "Michael Gustavsson",
+      "email": "michael.gustavsson@thehawk.com",
+      "imageUrl": "/images/Teacher2.png"
     },
     {
       "id": 1003,
-      "name": "Jonathan Norberg",
-      "email": "jonathan.norberg@vinicius.com",
-      "imageUrl": "/images/Student1.png"
+      "name": "Sara Simeone",
+      "email": "sara.simeone@thehawk.com",
+      "imageUrl": "/images/Teacher3.png"
     },
     {
       "id": 1004,
-      "name": "Christian Lopez Noguera",
-      "email": "christian.lopez.noguera@colombia.com",
-      "imageUrl": "/images/Student1.png"
+      "name": "Lina Serenis",
+      "email": "",
+      "imageUrl": "/images/Teacher4.png"
     },
     {
       "id": 1005,
