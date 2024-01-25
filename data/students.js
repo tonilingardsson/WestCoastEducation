@@ -10,4 +10,4 @@ function initPage () {
 
 const listAllStudents = () => students;
 // Export listAllStudents
-export default listAllStudents;
+// export default listAllStudents;

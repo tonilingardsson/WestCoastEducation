@@ -53,6 +53,58 @@ const addImageHandler = (images) => {
     // window.location.href = `course.html?id=${id}`;
 };
 
+
+const createStudentCard = (student) => {
+    console.log(student);
+//     Create card/div for each course
+    const div = document.createElement('div');
+    // Add class to card
+    div.classList.add('student-image');
+    // Add content: image. We need to create an image function!
+    div.appendChild(createStudentImage(student.imageUrl, student.id));
+    // Add content: title and info. We need to create a function that renders title and info function!
+    div.appendChild(createStudentInfo(student));
+
+    return div;
+}
+
+// The function to render the image
+// Arguments are the image url and the id of the course
+const createStudentImage = (imageUrl, id) => {
+    console.log(imageUrl);
+    // We save the image in a variable called image
+    const image = document.createElement('img');
+    // Set the source of the image
+    image.setAttribute('src', `${imageUrl}`);
+    // Set the data-id of the image
+    image.setAttribute('id', id);
+ 
+    return image;
+};
+
+const createStudentInfo = (student) => {
+    const paragraph = document.createElement('p');
+    paragraph.appendChild(document.createTextNode(`${student.name} - ${student.email}`));
+    studentEmail.classList.add('student-email');
+    return paragraph;
+};
+
+const addStudentImageHandler = (images) => {
+    images.forEach((image) => {
+        const src = image.getAttribute('src');
+        // Here it used id, so I need to call "id" 
+        // to get the id of the all images: courses, students, and teachers.
+        const studentId = image.getAttribute('id');
+
+        image.addEventListener('click', () => {
+            alert(`This student has this id:${id} and the picture's source is: ${src}`);
+        });
+    });
+    // const image = event.target;
+    // const id = image.getAttribute('id');
+    // window.location.href = `course.html?id=${id}`;
+};
+
 // Export the functions to be used in other files
 // This export type is called "named export"
-export { createCard, createImage, createCourseInfo, addImageHandler };
+export { createCard, createImage, createCourseInfo, addImageHandler, addStudentImageHandler, createStudentCard, createStudentImage, createStudentInfo };
