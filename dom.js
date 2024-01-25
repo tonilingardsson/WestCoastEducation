@@ -3,6 +3,7 @@
 /*******************************************************************************/
 //     Create card function with couse as argument
 const createCard = (course) => {
+    console.log(course);
 //     Create card/div for each course
     const div = document.createElement('div');
     // Add class to card
@@ -18,10 +19,11 @@ const createCard = (course) => {
 // The function to render the image
 // Arguments are the image url and the id of the course
 const createImage = (imageUrl, id) => {
+    console.log(imageUrl);
     // We save the image in a variable called image
     const image = document.createElement('img');
     // Set the source of the image
-    image.setAttribute('src', `/images/${imageUrl}`);
+    image.setAttribute('src', `${imageUrl}`);
     // Set the data-id of the image
     image.setAttribute('id', id);
  
@@ -53,4 +55,4 @@ const addImageHandler = (images) => {
 
 // Export the functions to be used in other files
 // This export type is called "named export"
-export { createCard, addImageHandler };
+export { createCard, createImage, createCourseInfo, addImageHandler };

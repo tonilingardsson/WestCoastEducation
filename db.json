@@ -1,58 +1,52 @@
 {
   "courses": [
     {
-      "presential-courses": [
-        {
-          "id": 301,
-          "name": "Blockchain Development",
-          "duration": "8 weeks",
-          "teacherId": 101,
-          "averageRating": 5,
-          "imageUrl": "/images/Blockchain.jpg"
-        },
-        {
-          "id": 302,
-          "name": "Cloud Computing",
-          "duration": "8 weeks",
-          "teacherId": 101,
-          "averageRating": 4.5,
-          "imageUrl": "/images/CloudComputing1.jpg"
-        },
-        {
-          "id": 3,
-          "name": "Cybersecurity Fundamentals",
-          "duration": "8 weeks",
-          "teacherId": 101,
-          "averageRating": 4.5,
-          "imageUrl": "/images/Cybersecurity.jpg"
-        }
-      ],
-      "remote-courses": [
-        {
-          "id": 1,
-          "name": "Cybersecurity Fundamentals",
-          "duration": "8 weeks",
-          "teacherId": 101,
-          "averageRating": 4.5,
-          "imageUrl": "/images/Cybersecurity.jpg"
-        },
-        {
-          "id": 2,
-          "name": "Digital Marketing",
-          "duration": "8 weeks",
-          "teacherId": 101,
-          "averageRating": 4.5,
-          "imageUrl": "/images/DigitalMarketing1.jpg"
-        },
-        {
-          "id": 3,
-          "name": "IT Automation",
-          "duration": "8 weeks",
-          "teacherId": 101,
-          "averageRating": 4.5,
-          "imageUrl": "/images/ITAutomation1.jpg"
-        }
-      ]
+      "id": 301,
+      "name": "Blockchain Development",
+      "duration": "8 weeks",
+      "teacherId": 101,
+      "averageRating": 5,
+      "imageUrl": "/images/Blockchain.jpg"
+    },
+    {
+      "id": 302,
+      "name": "Cloud Computing",
+      "duration": "8 weeks",
+      "teacherId": 101,
+      "averageRating": 4.5,
+      "imageUrl": "/images/CloudComputing1.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Cybersecurity Fundamentals",
+      "duration": "8 weeks",
+      "teacherId": 101,
+      "averageRating": 4.5,
+      "imageUrl": "/images/Cybersecurity.jpg"
+    },
+    {
+      "id": 1,
+      "name": "Cybersecurity Fundamentals",
+      "duration": "8 weeks",
+      "teacherId": 101,
+      "averageRating": 4.5,
+      "imageUrl": "/images/Cybersecurity.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Digital Marketing",
+      "duration": "8 weeks",
+      "teacherId": 101,
+      "averageRating": 4.5,
+      "imageUrl": "/images/DigitalMarketing1.jpg"
+    },
+    {
+      "id": 3,
+      "name": "IT Automation",
+      "duration": "8 weeks",
+      "teacherId": 101,
+      "averageRating": 4.5,
+      "imageUrl": "/images/ITAutomation1.jpg"
     }
   ],
   "students": [
@@ -61,14 +55,12 @@
       "name": "Carl Klöfverskjöld",
       "email": "carl.klofverskjold@linux.com",
       "imageUrl": "/images/Student1.png"
-
     },
     {
       "id": 1002,
       "name": "Jelena Cefalù",
       "email": "jelena.cefalu@crypto.com",
       "imageUrl": "/images/Student2.png"
-
     },
     {
       "id": 1003,

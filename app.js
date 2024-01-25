@@ -1,4 +1,4 @@
-import { createCard, addImageHandler } from "./dom.js";
+import { createCard, createImage, createCourseInfo, addImageHandler } from "./dom.js";
 // import listAllCourses from './data/courses.js';
 // import listAllStudents from './data/students.js';
 // import listAllTeachers from './data/teachers.js';
@@ -15,13 +15,13 @@ async function initPage() {
 //     const teachers = await listAllTeachers();
     courses.forEach((course) => {
         // Add courses to page
-        gallery.appendChild(createCourseCard(course)); 
+        coursesGallery.appendChild(createCard(course)); 
         // console.log(course);
     });
 
     // Render data. Fetched from db.json and displayed on the page.
     const images =  document.querySelectorAll('.course-image img');
-    addImageClickHandler(images);
+    addImageHandler(images);
     };
 
 
