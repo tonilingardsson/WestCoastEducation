@@ -1,36 +1,27 @@
-import { createCard, createImage, createCourseInfo, addImageHandler, addStudentImageHandler, createStudentCard, createStudentImage, createStudentInfo } from "./dom.js";
+import { createCard, createImage, createCourseInfo, addImageHandler } from "./dom.js";
 // import listAllCourses from './data/courses.js';
 // import listAllStudents from './data/students.js';
 // import listAllTeachers from './data/teachers.js';
 
 // Global variables. Courses, teachers, and students.
 const coursesGallery = document.querySelector('#courses-gallery');
-const studentsGallery = document.querySelector('#students-gallery');
+// const studentsGallery = document.querySelector('#students-gallery');
 // const teachersGallery = document.querySelector('#teachers-gallery');
 
 async function initPage() {
     // Load data
     const courses = await listAllCourses();
+//     const students = await listAllStudents();
 //     const teachers = await listAllTeachers();
     courses.forEach((course) => {
         // Add courses to page
         coursesGallery.appendChild(createCard(course)); 
         // console.log(course);
     });
-  
 
     // Render data. Fetched from db.json and displayed on the page.
     const images =  document.querySelectorAll('.course-image img');
     addImageHandler(images);
-    const students = await listAllStudents();
-
-    students.forEach((student) => {
-        // Add courses to page
-        studentsGallery.appendChild(createStudentCard(student)); 
-        // console.log(course);
-    });
-    const studentImages =  document.querySelectorAll('.student-image img');
-    addImageHandler(studentImages);
     };
 
 
@@ -54,18 +45,5 @@ const listAllCourses = async () => {
     //     .then(res => res.json())
     //     .then(data => data.courses);
 };
-
-const listAllStudents = async () => {
-    // Function to fetch students data from db.json
-    const url = 'http://localhost:3000/students';
-    const response = await fetch(url);
-    if (response.ok) {
-        const result = await response.json();
-        console.log(result);
-        return result;
-    } else {
-        throw new Error(`Network response was not ok. Error: ${response.status} ${response.statusText}`);
-    }
-}
 
 document.addEventListener('DOMContentLoaded', initPage);
