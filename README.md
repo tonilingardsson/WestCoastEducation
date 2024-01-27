@@ -10,30 +10,48 @@ WestCoast Educationär ett utbildningsföretag som har sinplacering på västkus
 
 Vårt koncept har och är fortfarande att tillhandahållaklassrums utbildningar där elever och lärare möts. Vi erbjuderäven distansutbildning där elever kan närvara via länk tillklassrum där en lärare genomför lektionen
 
-Vi märker dessvärre att antalet utbildningar som sker iklassrum minskar drastiskt samt att det har blivit svårare attlocka elever till våra distansutbildningar.
+Vi märker dessvärre att antalet utbildningar som sker i klassrum minskar drastiskt samt att det har blivit svårare att locka elever till våra distansutbildningar.
 
-Vi kommer nu att göra en stor satsning på att kunnatillhandahålla utbildningar, seminarier och webinarier ”On-Demand”.Vi har beslutat att vi behöver en modern och attraktivplattform att erbjuda våra elever och kunder för bokning,sökning, matchning av kurser samt samarbete.
+Vi kommer nu att göra en stor satsning på att kunna tillhandahålla utbildningar, seminarier och webinarier ”On-Demand”.Vi har beslutat att vi behöver en modern och attraktivplattform att erbjuda våra elever och kunder för:
++ bokning,
++ sökning, 
++ matchning av kurser 
++ samt samarbete.
 
 ///////////////////////////////////////////////////////////////////////////////////////////
 
 MÅL
-Vad vi behöver är en plattform som kan hantera vårttraditionella sätt att erbjuda utbildning på men som även kanhantera vårt nästa steg som är att tillhandahålla köp avinspelade kurser och seminarier för visning i webbläsare,mobila enheter samt för nedladdning.Så vi ser följande scenarier som systemet måste klara.
+Vad vi behöver är en plattform som kan hantera vårt traditionella sätt att erbjuda utbildning på men som även kan hantera vårt nästa steg som är att tillhandahålla köp av inspelade kurser och seminarier för visning i webbläsare,mobila enheter samt för nedladdning.Så vi ser följande scenarier som systemet måste klara.
 
 ///////////////////////////////////////////////////////////////////////////////////////////
 
 KLASSRUMSKURSER
-Visning och listning av kurser som kommer att köras på dettraditionella viset. Det vill säga i klassrum eller på distanssom är lärarledda. Det skall gå att visa detaljer för kursernasom till exempel innehåll, längden på kursen, vem som ärlärare samt genomsnittligt betyg som kursen fått av elever.
 
-Detta innebär att vi kommer att behöva kunna lägga tillkurser, matcha lärare till rätt kurs. Vi behöver ävenmöjlighet att ta bort kurser samt ändra kursers scheman.Vi behöver även kunna lägga till nya lärare vid behov isystemet.Vi behöver dessutom även möjlighet att kunna administreraelever i systemet. Vi vill ha möjlighet att kunna kommunicera med elever via e-post och via chatt. Även lärare behövermöjlighet att kunna kommunicera med elever via e-post och chatt.
+Visning och listning av kurser som kommer att köras på dett raditionella viset. Det vill säga i klassrum eller på distans som är lärarledda. Det skall gå att visa detaljer för kurserna som till exempel innehåll, längden på kursen, vem som är lärare samt genomsnittligt betyg som kursen fått av elever.
 
-Elever skall kunna följa sin status i verktyget och även kunnafå rekommendationer på nästa steg i sin utveckling. Som tillexempel rekommendationer på andra kurser som andra valt somhar gått samma utbildningsspår.
+Detta innebär att vi kommer att behöva kunna
++ LÄGGA TILL kurser, 
++ MATCHA lärare till rätt kurs. 
++ Vi behöver även möjlighet att TA BORT kurser 
++ samt ändra kursers scheman.
++ Vi behöver även kunna LÄGGA TILL nya lärare vid behov i systemet.
++ Vi behöver dessutom även möjlighet att kunna administrera elever i systemet.
++ Vi vill ha möjlighet att kunna (admin) KOMMUNICERA med elever via E-POST och via CHATT. 
++ Även LÄRARE behöver möjlighet att kunna KOMMUNICERA med elever via E-POST och CHATT.
 
-För varje kurs så skall det finnas möjlighet för elever attkunna ställa frågor till sin lärare via verktyget.
+/////// Student (reg-user admin page) /////
+
+Elever skall kunna:
++ FÖLJA sin STATUS i verktyget och även,
++ kunna FÅ REKOMMENDATIONER på nästa steg i sin utveckling. Som tillexempel rekommendationer på andra kurser som andra valt somhar gått samma utbildningsspår.
+
+För varje kurs så skall det:
++ finnas möjlighet för elever att kunna STÄLLA FRÅGOR till sin lärare VIA verktyget.
 
 ///////////////////////////////////////////////////////////////////////////////////////////
 
 BOKNING AV KLASSRUMSKURSER
-För att kunna boka en kurs via verktyget måste man ha ettanvändarkonto. Så ett sätt för att registrera sig och logga inmåste skapas.
++ För att kunna boka en kurs via verktyget måste man ha ett användarkonto. Så ett sätt för att REGISTRERA sig och LOGGA-IN måste skapas.
 
 När en elev har bokat en kurs så behöver vi kunna skicka ettbekräftelsemejl med betalningsuppgifter och ettvälkomstmeddelande. Dessutom så måste vi kunna skicka ettstartmejl senast två veckor före kursstart.
 
