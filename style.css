@@ -21,8 +21,9 @@ img {
 nav {
     padding: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+    background-color: lightsteelblue;
 }
 
 nav ul {
@@ -34,12 +35,17 @@ nav ul {
 nav a {
     text-decoration: none;
 }
-
+footer {
+    padding: 10px;
+    margin: 5px;
+    background-color: lightsteelblue
+;}
 footer ul {
     list-style: none;
     display: flex;
     gap: 20px;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 footer a {

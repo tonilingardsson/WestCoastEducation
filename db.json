@@ -26,15 +26,15 @@
     },
     {
       "id": 1,
-      "name": "Cybersecurity Fundamentals",
+      "name": "Cybersecurity Fundamentals | Remote",
       "duration": "8 weeks",
       "teacherId": 101,
       "averageRating": 4.5,
-      "imageUrl": "/images/Cybersecurity.jpg"
+      "imageUrl": "/images/Cybersecurity2.jpg"
     },
     {
       "id": 2,
-      "name": "Digital Marketing",
+      "name": "Digital Marketing | Remote",
       "duration": "8 weeks",
       "teacherId": 101,
       "averageRating": 4.5,
@@ -42,11 +42,11 @@
     },
     {
       "id": 3,
-      "name": "IT Automation",
+      "name": "IT Automation | Remote",
       "duration": "8 weeks",
       "teacherId": 101,
       "averageRating": 4.5,
-      "imageUrl": "/images/ITAutomation1.jpg"
+      "imageUrl": "/images/IT Automation2.jpg"
     }
   ],
   "students": [
