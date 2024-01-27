@@ -9,6 +9,15 @@ h1 {
     text-align: center;
 }
 
+img {
+    border-radius: 0.5rem;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+
+}
+
 nav {
     padding: 10px;
     display: flex;
@@ -39,56 +48,4 @@ footer a {
 
 footer p {
     text-align: center;
-}
-
-/* Light Mode Styles */
-body.light-mode {
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-nav.light-mode {
-    background-color: #a9a9a9;
-    color: #333;
-}
-
-nav a.light-mode {
-    color: #333;
-}
-
-#theme-toggle-btn.light-mode {
-    background-color: #333;
-    color: #fff;
-
-    
-}
-
-footer.light-mode {
-    background-color: #a9a9a9;
-    color: #333;
-}
-
-/* Dark Mode Styles */
-body.dark-mode {
-    background-color: #333;
-    color: #fff;
-}
-
-nav.dark-mode {
-    background-color: #f5f5f5;
-    color: #fff;
-}
-
-nav a.dark-mode {
-    color: #fff;
-}
-
-#theme-toggle-btn.dark-mode {
-    background-color: #fff;
-    color: #333;
-}
-
-footer.dark-mode {
-    background-color: #a9a9a9;
-    color: #333;
 }
