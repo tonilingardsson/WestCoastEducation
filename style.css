@@ -24,6 +24,17 @@ a:hover, .button-hover {
     font-weight: bold;  
 }
 
+.btn-danger {
+    color: black;
+    border: 1px solid red;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: red;
+    transition: color 0.3s ease;
+    font-weight: bold;
+
+}
+
 form.login {
     display: flex;
     flex-direction: column;
