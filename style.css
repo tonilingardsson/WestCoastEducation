@@ -68,11 +68,18 @@ max-width: 40rem;
 max-height: 40rem;
 }
 
+img.minilogo {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    margin-right: 10px;
+}
+
 label {
     display: block;
-    margin-bottom: 0.5rem;
     font-weight: bold;
     text-align: left;
+    margin-bottom: 0;
 }
 #loginBtn {
     margin: 0 auto;
