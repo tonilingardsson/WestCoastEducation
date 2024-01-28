@@ -15,13 +15,14 @@ async function initPage() {
 //     const teachers = await listAllTeachers();
     courses.forEach((course) => {
         // Add courses to page
-        coursesGallery.appendChild(createCard(course)); 
+        coursesGallery.appendChild(createCard(course));
         // console.log(course);
     });
 
     // Render data. Fetched from db.json and displayed on the page.
     const images =  document.querySelectorAll('.course-image img');
     addImageHandler(images);
+    
     };
 
 
@@ -45,5 +46,6 @@ const listAllCourses = async () => {
     //     .then(res => res.json())
     //     .then(data => data.courses);
 };
+
 
 document.addEventListener('DOMContentLoaded', initPage);
