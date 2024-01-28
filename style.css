@@ -3,11 +3,21 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
+    /* Background color to make it more readable */
+    background-color: lightgrey;
+    color: black;
+    line-height: 1.5;
+    font-size: 16px;
+    max-width: 100%;
 }
 
-h1 {
+h1, h2 {
     text-align: center;
 }
+
+h3, h4 {
+margin-left : 5%;
+margin-right : 5%;}
 
 img {
     border-radius: 0.5rem;
@@ -15,7 +25,8 @@ img {
     height: auto;
     margin: 0 auto;
     display: block;
-
+max-width: 40rem;
+max-height: 40rem;
 }
 
 nav {
@@ -34,6 +45,12 @@ nav ul {
 
 nav a {
     text-decoration: none;
+}
+
+p {
+    margin-left : 5%;
+    margin-right : 5%;
+    text-align: justify;
 }
 footer {
     padding: 10px;
