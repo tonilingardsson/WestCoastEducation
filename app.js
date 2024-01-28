@@ -1,4 +1,4 @@
-import { createCard, createImage, createCourseInfo, addImageHandler } from "./dom.js";
+import { createCard, createImage, createCourseInfo, addImageHandler } from "./scripts/dom.js";
 // import listAllCourses from './data/courses.js';
 // import listAllStudents from './data/students.js';
 // import listAllTeachers from './data/teachers.js';

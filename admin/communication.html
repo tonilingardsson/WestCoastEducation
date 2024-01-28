@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Communication | West Coast Education</title>
+    <meta
+      name="description"
+      content="Communication page for West Coast Education. Email form and chat message API integration"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Communications</h1>
+      <section class="email">
+        <h2 id="email"></h2>
+        <form id="emailForm">
+          <input type="email" name="email" id="emailInput" />
+          <textarea name="message" id="messageInput"></textarea>
+          <input type="submit" value="Submit" />
+      </section>
+
+      <section class="chat">
+        <h2 id="chat"></h2>
+        <div id="chatMessages"></div>
+        <form id="chatForm">
+            <div id="chat-messages">
+                <div class="message">You: Hello John Doe! How is it going with the course?</div>
+                <div class="message">John Doe: This is a test course!</div>
+            </div>
+          <input type="text" name="name" id="chatName" />
+          <input type="email" name="email" id="chatEmail" />
+          <input type="text" name="message" id="chatInput" />
+          <input type="submit" value="Submit" />
+      </section>
+    </main>
+
+    <script src="../app.js" async defer></script>
+  </body>
+</html>
