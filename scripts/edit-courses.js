@@ -1,15 +1,13 @@
+console.log('Connected to edit-courses.js');
+
 import HttpClient from "./http.js";
 import { convertFormDataToJson } from "./utilities.js";
+const form = document.querySelector('updateCourseForm');
 
-const courseUpdateForm = document.querySelector('updateCourseForm');
-const studentUpdateForm = document.querySelector('updateStudentForm');
-const teacherUpdateForm = document.querySelector('updateTeacherForm');
 // One delete button for all forms
 const deleteButton = document.querySelector('#delete');
 
 let courseId = 0;
-let studentId = 0;
-let teacherId = 0;
 
 const initPage = async () => {
     // Load data

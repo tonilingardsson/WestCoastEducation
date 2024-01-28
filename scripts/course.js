@@ -8,6 +8,7 @@ const addCourse = async (e) => {
     // Get data from the form, and send it to the server through an object
     const course = new FormData(form);
     const object = convertFormDataToJson(course);
+    console.log(object);
     saveCourse(object);
 };
 
