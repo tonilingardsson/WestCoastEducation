@@ -8,6 +8,7 @@ const addStudent = async (e) => {
     e.preventDefault();
     const student = new FormData(form);
     const object = convertFormDataToJson(student);
+    console.log(object);
     saveStudent(object);
 };
 

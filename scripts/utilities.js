@@ -1,4 +1,4 @@
-const convertFormDataToJSON = (formData) => {
+const convertFormDataToJson = (formData) => {
     const object = {};
     formData.forEach((value, key) => {
         object[key] = value;
@@ -6,4 +6,4 @@ const convertFormDataToJSON = (formData) => {
     return object;
 }
 
-export { convertFormDataToJSON };
+export { convertFormDataToJson };
