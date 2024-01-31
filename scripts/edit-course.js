@@ -1,5 +1,3 @@
-console.log('Connected to edit-courses.js');
-
 import HttpClient from "./http.js";
 import { convertFormDataToJson } from "./utilities.js";
 const form = document.querySelector('updateCourseForm');
@@ -11,31 +9,39 @@ let courseId = 0;
 
 const initPage = async () => {
     // Load data
-    courseId = location.search.split('=')[1];    
-    console.log(courseId);
+    courseId = location.search.split('=')[1];
     getCourse(courseId);
 };
+
 
 // Get data to be displayed on the EDIT form
 const getCourse = async (id) => {
     const url = `http://localhost:3000/courses/${id}`;
     const http = new HttpClient(url);
     const course = await http.get();
-    console.log(course);
     loadDataToForm(course);
+    console.log(course);
 };
 
 const loadDataToForm = (course) => {
-    // Create a dictionary list with all the properties of the course object (key: value)
-    const courseProperties = new URLSearchParams(course).entries();
-    // Iterate over the dictionary list
-    for(let [key, value] of courseProperties) {
-        if (key !== 'id') {
-            const input = form.elements[key];
-            input.value = value;
-        }
-    }
-};
+    const entries = new URLSearchParams(course).entries();
+    console.log(...entries);
+}
+
+// const loadDataToForm = (course) => {
+//     // Create a dictionary list with all the properties of the course object (key: value)
+//     const courseProperties = new URLSearchParams(course).entries();
+//     // Iterate over the dictionary list
+//     console.log(courseProperties);
+//     for(let [key, value] of courseProperties) {
+//         if (key !== 'id') {
+//             const input = form.elements[key];
+//             input.value = value;
+//         }
+//     }
+// TRY THIS from AI
+//     courseId = course.id;
+// };
 
 const updateCourse = async (e) => {
     e.preventDefault();
@@ -51,14 +57,15 @@ const updateCourse = async (e) => {
 
 const deleteCourse = async (e) => {
     e.preventDefault();
-    const url = `http://localhost:3000/courses/${courseId}`;
+    const url = `http://localhost:3000/courses/${id}`;
     const http = new HttpClient(url);
     await http.delete();
     location.href = './courses.html';
 };
+
 // Get ready these functions when the document is ready
 document.addEventListener('DOMContentLoaded', initPage);
 // Add an event listener to the updateCourse form
-form.addEventListener('submit', updateCourse);
+// form.addEventListener('submit', updateCourse);
 // Make the delete button work!
 deleteButton.addEventListener('click', deleteCourse);

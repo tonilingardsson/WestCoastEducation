@@ -1,4 +1,4 @@
-import { createCard, createImage, createCourseInfo, addImageHandler } from "./scripts/dom.js";
+import { createCard, addImageClickHandler, createCourseList } from "./scripts/dom.js";
 // import listAllCourses from './data/courses.js';
 // import listAllStudents from './data/students.js';
 // import listAllTeachers from './data/teachers.js';
@@ -34,7 +34,6 @@ const listAllCourses = async () => {
     // Indicating what to do with the data (above)
     if (response.ok) {
         const result = await response.json();
-        console.log(result);
         // Saving the result in a variable. Using await to wait for the data to be fetched
         return result;
     } else {

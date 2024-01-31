@@ -12,7 +12,7 @@ const createCard = (course) => {
 }
 
 const createImage = (imageUrl, id) => {
-    console.log(imageUrl);
+    // console.log(imageUrl);
     // We save the image in a variable called image
     const image = document.createElement('img');
     // Set the source of the image. 
@@ -32,7 +32,29 @@ const createCourseInfo = (course) => {
     return paragraph;
 };
 
-const addImageHandler = (images) => {
+const createCourseList = (courses, element) => {
+    courses.forEach((course) => {
+        const container = createDiv();
+        container.setAttribute('courseid', course.id);
+        container.appendChild(createSpan(course.name));
+        container.appendChild(createSpan(course.duration));
+        container.appendChild(createSpan(course.averageRating));
+        container.appendChild(createSpan(course.imageUrl));
+        element.appendChild(container);
+    });
+};
+
+const createDiv = () => {
+    return document.createElement('div');
+};
+
+const createSpan = (text) => {
+    const span = document.createElement('span');
+    span.innerText = text;
+    return span;
+}
+
+const addImageClickHandler = (images) => {
     images.forEach((image) => {
         const src = image.getAttribute('src');
         // Here it used id, so I need to call "id" 
@@ -50,4 +72,4 @@ const addImageHandler = (images) => {
 
 // Export the functions to be used in other files
 // This export type is called "named export"
-export { createCard, createImage, createCourseInfo, addImageHandler };
+export { createCard, addImageClickHandler, createCourseList };
