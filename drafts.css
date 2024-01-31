@@ -1,0 +1,82 @@
+/* Styles for the chat application */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 400px; /* Adjust height as needed */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+}
+
+.chat-bubble {
+    max-width: 70%;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.sender-bubble {
+    background-color: #DCF8C6;
+    align-self: flex-start;
+}
+
+.receiver-bubble {
+    background-color: #E5E5EA;
+    align-self: flex-end;
+}
+
+/* Styles for the email editor */
+.email-editor {
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+}
+
+.email-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.email-textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.email-toolbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.email-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.email-button-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.email-button-secondary {
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+.email-button-primary:hover {
+    background-color: #0056b3;
+}
+
+.email-button-secondary:hover {
+    background-color: #e2e6ea;
+}
