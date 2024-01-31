@@ -21,7 +21,7 @@ async function initPage() {
 
     // Render data. Fetched from db.json and displayed on the page.
     const images =  document.querySelectorAll('.course-image img');
-    addImageHandler(images);
+    addImageClickHandler(images);
     
     };
 

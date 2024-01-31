@@ -23,8 +23,16 @@ const selectedCourse = (e) => {
     } else if (e.target.localName === 'span') {
         courseId = e.target.parentElement.getAttribute('courseid');
     }
+    console.log(courseId);
     // Redirect to edit-course.html
     location.href = `./edit-course.html?id=${courseId}`;
 };
+
+const getCourse = async (id) => {
+    const url = `http://localhost:3000/courses/${id}`;
+    const http = new HttpClient(url);
+    const course = await http.get();
+    console.log(course);
+}
 
 document.addEventListener('DOMContentLoaded', initPage);
