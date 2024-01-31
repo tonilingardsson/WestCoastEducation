@@ -23,14 +23,15 @@ const getCourse = async (id) => {
 };
 
 const loadDataToForm = (course) => {
-    const entries = new URLSearchParams(course).entries();
-    // Iterate over the dictionary list
-    for (let [key, value] of entries) {
-        if (key !== 'id') {
-            const input = form.elements[key];
-            input.value = value;
-        }
-    }
+   console.log(form.elements);
+    // const entries = new URLSearchParams(course).entries();
+    // // Iterate over the dictionary list
+    // for (let [key, value] of entries) {
+    //     if (key !== 'id') {
+    //         const input = form.elements[key];
+    //         input.value = value;
+    //     }
+    // }
     // console.log(...entries);
 };
 
