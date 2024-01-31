@@ -17,7 +17,7 @@ const createImage = (imageUrl, id) => {
     const image = document.createElement('img');
     // Set the source of the image. 
     // If CHANGE the position of the image files, EDIT the source here.
-    image.setAttribute('src', `${imageUrl}`);
+    image.setAttribute('src', `/images/${imageUrl}`);
     // Set the data-id of the image
     image.setAttribute('id', id);
  
