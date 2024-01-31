@@ -4,7 +4,7 @@
       "id": 301,
       "name": "Blockchain Development",
       "duration": "8 weeks",
-      "teacherId": 101,
+      "teacherId": 102,
       "averageRating": 5,
       "imageUrl": "Blockchain.jpg"
     },
@@ -17,15 +17,22 @@
       "imageUrl": "CloudComputing1.jpg"
     },
     {
-      "id": 3,
+      "id": 303,
       "name": "Cybersecurity Fundamentals",
       "duration": "8 weeks",
       "teacherId": 101,
       "averageRating": 4.5,
       "imageUrl": "Cybersecurity.jpg"
+    },{
+      "id": 304,
+      "name": "Product Management",
+      "duration": "8 weeks",
+      "teacherId": 102,
+      "averageRating": 4.5,
+      "imageUrl": "Product_Management.jpg"
     },
     {
-      "id": 1,
+      "id": 341,
       "name": "Cybersecurity Fundamentals | Remote",
       "duration": "8 weeks",
       "teacherId": 101,
@@ -33,20 +40,28 @@
       "imageUrl": "Cybersecurity2.jpg"
     },
     {
-      "id": 2,
+      "id": 342,
       "name": "Digital Marketing | Remote",
       "duration": "8 weeks",
-      "teacherId": 101,
+      "teacherId": 103,
       "averageRating": 4.5,
       "imageUrl": "DigitalMarketing1.jpg"
     },
     {
-      "id": 3,
+      "id": 343,
       "name": "IT Automation | Remote",
       "duration": "8 weeks",
-      "teacherId": 101,
+      "teacherId": 102,
       "averageRating": 4.5,
       "imageUrl": "IT Automation2.jpg"
+    },
+    {
+      "id": 344,
+      "name": "Test Automation | Remote",
+      "duration": "18 weeks",
+      "teacherId": 102,
+      "averageRating": 4.5,
+      "imageUrl": "IT AutomationX.jpg"
     }
   ],
   "students": [
