@@ -17,8 +17,7 @@ const saveCourse = async (course) => {
     const url = 'http://localhost:3000/courses';
     const http = new HttpClient(url);
     await http.add(course);
-    console.log(course);
     // Redirect to courses.html once the data is added to check if the addition was successful
-    location.href = './courses.html';
+    location.href = './index.html';
 };
 form.addEventListener('submit', addCourse);

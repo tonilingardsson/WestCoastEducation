@@ -35,17 +35,17 @@ const loadDataToForm = (course) => {
     // console.log(...entries);
 };
 
-// const updateCourse = async (e) => {
-//     e.preventDefault();
-//     const course = new FormData(form);
-//     const object = convertFormDataToJson(course);
-//     const url = `http://localhost:3000/courses/${courseId}`;
-//     const http = new HttpClient(url);
-//     await http.put(object);
-//     console.log(course);
-//     // Redirect to courses.html once the data is updated to check if the update was successful
-//     location.href = './courses.html';
-// };
+const updateCourse = async (e) => {
+    e.preventDefault();
+    const course = new FormData(form);
+    const object = convertFormDataToJson(course);
+    const url = `http://localhost:3000/courses/${courseId}`;
+    const http = new HttpClient(url);
+    await http.put(object);
+    console.log(course);
+    // Redirect to courses.html once the data is updated to check if the update was successful
+    location.href = './courses.html';
+};
 
 // const deleteCourse = async (e) => {
 //     e.preventDefault();
@@ -57,6 +57,6 @@ const loadDataToForm = (course) => {
 // Get ready these functions when the document is ready
 document.addEventListener('DOMContentLoaded', initPage);
 // Add an event listener to the updateCourse form
-// form.addEventListener('submit', updateCourse);
+form.addEventListener('submit', updateCourse);
 // // Make the delete button work!
 // deleteButton.addEventListener('click', deleteCourse);

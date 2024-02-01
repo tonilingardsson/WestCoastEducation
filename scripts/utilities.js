@@ -1,9 +1,6 @@
 const convertFormDataToJson = (formData) => {
-    const object = {};
-    formData.forEach((value, key) => {
-        object[key] = value;
-    });
-    return object;
+    const data = Object.fromEntries(formData.entries());
+    return data;
 }
 
 export { convertFormDataToJson };

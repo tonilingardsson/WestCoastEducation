@@ -2,7 +2,7 @@ import HttpClient from "./http.js";
 import { convertFormDataToJson } from "./utilities.js";
 
 const form = document.querySelector('addStudentForm');
-const studentsGallery = document.querySelector('#students-gallery');
+const studentsGallery = document.querySelector('#students');
 
 const addStudent = async (e) => {
     e.preventDefault();
@@ -17,7 +17,7 @@ const saveStudent = async (student) => {
     const http = new HttpClient(url);
     await http.add(student);
     console.log(student);
-    location.href = './students.html';
+    location.href = './index.html';
 };
 
 form.addEventListener('submit', addStudent);
