@@ -1,5 +1,5 @@
 import HttpClient from "./http.js";
-import { createCourseList } from "./dom.js";
+import { createCard, addImageClickHandler,createCourseList } from "./dom.js";
 
 const initPage = async () => {
     const url = 'http://localhost:3000/courses';
