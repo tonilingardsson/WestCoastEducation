@@ -93,6 +93,25 @@ const listAllTeachers = async () => {
     }
 }
 
+function createCourse(course) {
+    const courseCard = createCard(course);
+    courseCard.addEventListener('click', selectedCourse);
+    courseCard.querySelector('.delete-button').addEventListener('click', deleteCourse);
+    courseCard.querySelector('.edit-button').addEventListener('click', editCourse);
+    courseCard.querySelector('.view-button').addEventListener('click', viewCourse);
+    courseCard.querySelector('.view-students-button').addEventListener('click', viewStudents);
+    courseCard.querySelector('.view-teachers-button').addEventListener('click', viewTeachers);
+    courseCard.querySelector('.add-student-button').addEventListener('click', addStudent);
+    courseCard.querySelector('.add-teacher-button').addEventListener('click', addTeacher);
+    courseCard.querySelector('.add-course-button').addEventListener('click', addCourse);
+    courseCard.querySelector('.add-image-button').addEventListener('click', addImage);
+    courseCard.querySelector('.delete-image-button').addEventListener('click', deleteImage);
+    courseCard.querySelector('.view-image-button').addEventListener('click', viewImage);
+    courseCard.querySelector('.edit-image-button').addEventListener('click', editImage);
+    
+    return courseCard;
+}
+
 const selectedCourse = (e) => {
     let courseId = 0;
     if (e.target.localName === 'div') {
