@@ -1,5 +1,5 @@
 import HttpClient from "./http.js";
-import { createCard, createCardS, addImageClickHandler, createCourseList } from "./dom.js";
+import { createCard, createCardS, createCardT, addImageClickHandler, createCourseList } from "./dom.js";
 
 
 // Global variables. Courses, teachers, and students.
@@ -22,7 +22,7 @@ async function initPage() {
     students.forEach((student) => {
         // Add students to page
         studentsGallery.appendChild(createCardS(student));
-        
+
         // console.log(student);
     })
 

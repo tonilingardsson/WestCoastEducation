@@ -27,7 +27,6 @@ const teachers = await listAllTeachers();
     teachers.forEach((teacher) => {
         // Add teachers to page
         teachersGallery.appendChild(createCardT(teacher));
-        console.log(teacher);
     })
 
     // Render data. Fetched from db.json and displayed on the page.
