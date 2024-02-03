@@ -116,74 +116,84 @@
     {
       "id": 1009,
       "name": "Matteus Grodzki",
-      "email": "matteus.grodzki@codeman.com"
-    },
-    {
-      "id": 1010,
-      "name": "William Jansson",
-      "email": "william.jansson@thehawk.com"
-    }
-  ],
-  "teachers": [
-    {
-      "id": 1001,
-      "name": "Carl Klöfverskjöld",
-      "email": "carl.klofverskjold@linux.com",
-      "imageUrl": "Student1.png"
-    },
-    {
-      "id": 1002,
-      "name": "Jelena Cefalù",
-      "email": "jelena.cefalu@crypto.com",
-      "imageUrl": "Student2.png"
-    },
-    {
-      "id": 1003,
-      "name": "Jonathan Norberg",
-      "email": "jonathan.norberg@vinicius.com",
-      "imageUrl": "Student3.png"
-    },
-    {
-      "id": 1004,
-      "name": "Christian Lopez Noguera",
-      "email": "christian.lopez.noguera@colombia.com",
-      "imageUrl": "Student4.png"
-    },
-    {
-      "id": 1005,
-      "name": "Alemayehu Wakjira",
-      "email": "alemayehu.wakjira@binance.com",
-      "imageUrl": "Student5.png"
-    },
-    {
-      "id": 1006,
-      "name": "Mikael Sundh",
-      "email": "mikael.sundh@nasa.com",
-      "imageUrl": "Student6.png"
-    },
-    {
-      "id": 1007,
-      "name": "Rowel Malmström",
-      "email": "rowel.malmstrom@hoodie.com",
-      "imageUrl": "Student7.png"
-    },
-    {
-      "id": 1008,
-      "name": "Sebastian Flavet",
-      "email": "sebastian.flavet@artist.com",
-      "imageUrl": "Student8.png"
-    },
-    {
-      "id": 1009,
-      "name": "Matteus Grodzki",
       "email": "matteus.grodzki@codeman.com",
-      "imageUrl": "Student9.png"
+      "imageUrl": "Student1.png"
     },
     {
       "id": 1010,
       "name": "William Jansson",
       "email": "william.jansson@thehawk.com",
-      "imageUrl": "Student10.png"
+      "imageUrl": "Student2.png"
+    }
+  ],
+  "teachers": [
+    {
+      "id": 7001,
+      "name": "Jenni Pulli",
+      "email": "jenni.pulli@westcoast.edu",
+      "courses": [
+        {
+          "id": 302,
+          "name": "Cloud Computing"
+        },
+        {
+          "id": 303,
+          "name": "Cybersecurity Fundamentals"
+        },
+        {
+          "id": 305,
+          "name": "Web Development Fundamentals"
+        }
+        
+      ],
+      "imageUrl": "TeacherWoman.jpg"
+    },
+    {
+      "id": 7002,
+      "name": "Sara Simeone",
+      "email": "sara.simeone@westcoast.edu",
+      "courses": [
+        {
+          "id": 306,
+          "name": "Digital Marketing"
+        },{
+          "id": 304,
+          "name": "Product Management"
+        }
+      ],
+      "imageUrl": "TeacherWoman2.jpg"
+    },
+    {
+      "id": 7003,
+      "name": "Michael Gustavsson",
+      "email": "michael.gustavsson@westcoast.edu",
+      "courses": [
+        {
+          "id": 301,
+          "name": "Blockchain Development"
+        },
+        {
+          "id": 341,
+          "name": "Cybersecurity Fundamentals | Remote"
+        }
+      ],
+      "imageUrl": "TeacherMan.jpg"
+    },
+    {
+      "id": 7004,
+      "name": "Crispin Grijander",
+      "email": "crispin.grijander@westcoast.edu",
+      "courses": [
+        {
+          "id": 342,
+          "name": "Test Automation | Remote"
+        },
+        {
+          "id": 343,
+          "name": "IT Automation | Remote"
+        }
+      ],
+      "imageUrl": "KrispinGrijander.jpeg"
     }
   ]
 }

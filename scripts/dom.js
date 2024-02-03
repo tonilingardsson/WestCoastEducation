@@ -17,6 +17,17 @@ const createCardS = (student) => {
     div.classList.add('student-image', 'img');
     div.appendChild(createImage(student.imageUrl, student.id));
     div.appendChild(createStudentInfo(student));
+    // button.appendChild(createDeleteButton(student.id));
+    return div;
+}
+
+const createCardT = (teacher) => {
+    console.log(teacher);
+    const div = document.createElement('div');
+    div.classList.add('teacher-image', 'img');
+    div.appendChild(createImage(teacher.imageUrl, teacher.id));
+    div.appendChild(createTeacherInfo(teacher));
+    // button.appendChild(createDeleteButton(teacher.id));
     
     return div;
 }
@@ -37,7 +48,6 @@ const createImage = (imageUrl, id) => {
 const createCourseInfo = (course) => {
     const paragraph = document.createElement('p');
     paragraph.appendChild(document.createTextNode(`${course.name} - ${course.duration} - Rating: ${course.averageRating}/5`));
-    
     // courseInfo.classList.add('course-info');
     return paragraph;
 };
@@ -45,10 +55,18 @@ const createCourseInfo = (course) => {
 const createStudentInfo = (student) => {
     const paragraph = document.createElement('p');
     paragraph.appendChild(document.createTextNode(`${student.name} - ${student.email} `));
-    
     // courseInfo.classList.add('course-info');
     return paragraph;
 };
+const createTeacherInfo = (teacher) => {
+    const paragraph = document.createElement('p');
+    paragraph.appendChild(document.createTextNode(`${teacher.name} - ${teacher.email}`));
+    // courseInfo.classList.add('course-info');
+    return paragraph;
+};
+
+
+
 
 const createCourseList = (courses, element) => {
     courses.forEach((course) => {
@@ -59,6 +77,9 @@ const createCourseList = (courses, element) => {
         container.appendChild(createSpan(course.averageRating));
         container.appendChild(createSpan(course.imageUrl));
         element.appendChild(container);
+        const button = deleteStudent(student.id);
+    button.appendChild(createDeleteButton(student.id));
+    element.appendChild(button);
     });
 };
 
@@ -88,6 +109,14 @@ const addImageClickHandler = (images) => {
     // window.location.href = `course.html?id=${id}`;
 };
 
+const deleteStudent = (id) => {
+    const button = document.createElement('button');
+    button.classList.add('delete-button');
+    button.setAttribute('id', id);
+    button.textContent = 'Delete';
+    return button;
+}
+
 // Export the functions to be used in other files
 // This export type is called "named export"
-export { createCard, createCardS, addImageClickHandler, createCourseList };
+export { createCard, createCardS, createCardT, addImageClickHandler, createCourseList };

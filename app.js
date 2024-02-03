@@ -1,9 +1,9 @@
-import { createCard, createCardS, addImageClickHandler, createCourseList } from "./scripts/dom.js";
+import { createCard, createCardS, createCardT, addImageClickHandler, createCourseList } from "./scripts/dom.js";
 
 // Global variables. Courses, teachers, and students.
 const coursesGallery = document.querySelector('#courses-gallery');
 const studentsGallery = document.querySelector('#students-gallery');
-// const teachersGallery = document.querySelector('#teachers-gallery');
+const teachersGallery = document.querySelector('#teachers-gallery');
 
 async function initPage() {
     // Load data
@@ -23,8 +23,15 @@ async function initPage() {
         // console.log(student);
     })
 
+const teachers = await listAllTeachers();
+    teachers.forEach((teacher) => {
+        // Add teachers to page
+        teachersGallery.appendChild(createCardT(teacher));
+        console.log(teacher);
+    })
+
     // Render data. Fetched from db.json and displayed on the page.
-    const images =  document.querySelectorAll('.course-image img, .student-image img');
+    const images =  document.querySelectorAll('.course-image img, .student-image img', '.teacher-image img');
     addImageClickHandler(images);
     
     };
@@ -59,6 +66,17 @@ const listAllStudents = async () => {
     } else {
         throw new Error(`Network response was not ok. Error: ${response.status} ${response.statusText}`);
     }
+}
+
+const listAllTeachers = async () => {
+    const url = 'http://localhost:3000/teachers';
+    const response = await fetch(url);
+    if (response.ok) {
+        const result = await response.json();
+        return result;
+    } else {
+        throw new Error(`Network response was not ok. Error: ${response.status} ${response.statusText}`);
+    }   
 }
 
 document.addEventListener('DOMContentLoaded', initPage);
