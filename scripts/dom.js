@@ -11,6 +11,16 @@ const createCard = (course) => {
     return div;
 }
 
+const createCardS = (student) => {
+    console.log(student);
+    const div = document.createElement('div');
+    div.classList.add('student-image', 'img');
+    div.appendChild(createImage(student.imageUrl, student.id));
+    div.appendChild(createStudentInfo(student));
+    
+    return div;
+}
+
 const createImage = (imageUrl, id) => {
     // console.log(imageUrl);
     // We save the image in a variable called image
@@ -27,6 +37,14 @@ const createImage = (imageUrl, id) => {
 const createCourseInfo = (course) => {
     const paragraph = document.createElement('p');
     paragraph.appendChild(document.createTextNode(`${course.name} - ${course.duration} - Rating: ${course.averageRating}/5`));
+    
+    // courseInfo.classList.add('course-info');
+    return paragraph;
+};
+
+const createStudentInfo = (student) => {
+    const paragraph = document.createElement('p');
+    paragraph.appendChild(document.createTextNode(`${student.name} - ${student.email} `));
     
     // courseInfo.classList.add('course-info');
     return paragraph;
@@ -72,4 +90,4 @@ const addImageClickHandler = (images) => {
 
 // Export the functions to be used in other files
 // This export type is called "named export"
-export { createCard, addImageClickHandler, createCourseList };
+export { createCard, createCardS, addImageClickHandler, createCourseList };

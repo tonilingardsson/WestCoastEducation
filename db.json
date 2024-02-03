@@ -135,55 +135,55 @@
       "id": 1002,
       "name": "Jelena Cefalù",
       "email": "jelena.cefalu@crypto.com",
-      "imageUrl": "Student1.png"
+      "imageUrl": "Student2.png"
     },
     {
       "id": 1003,
       "name": "Jonathan Norberg",
       "email": "jonathan.norberg@vinicius.com",
-      "imageUrl": "Student1.png"
+      "imageUrl": "Student3.png"
     },
     {
       "id": 1004,
       "name": "Christian Lopez Noguera",
       "email": "christian.lopez.noguera@colombia.com",
-      "imageUrl": "Student1.png"
+      "imageUrl": "Student4.png"
     },
     {
       "id": 1005,
       "name": "Alemayehu Wakjira",
       "email": "alemayehu.wakjira@binance.com",
-      "imageUrl": "Student1.png"
+      "imageUrl": "Student5.png"
     },
     {
       "id": 1006,
       "name": "Mikael Sundh",
       "email": "mikael.sundh@nasa.com",
-      "imageUrl": "Student1.png"
+      "imageUrl": "Student6.png"
     },
     {
       "id": 1007,
       "name": "Rowel Malmström",
       "email": "rowel.malmstrom@hoodie.com",
-      "imageUrl": "Student1.png"
+      "imageUrl": "Student7.png"
     },
     {
       "id": 1008,
       "name": "Sebastian Flavet",
       "email": "sebastian.flavet@artist.com",
-      "imageUrl": "Student1.png"
+      "imageUrl": "Student8.png"
     },
     {
       "id": 1009,
       "name": "Matteus Grodzki",
       "email": "matteus.grodzki@codeman.com",
-      "imageUrl": "Student1.png"
+      "imageUrl": "Student9.png"
     },
     {
       "id": 1010,
       "name": "William Jansson",
       "email": "william.jansson@thehawk.com",
-      "imageUrl": "Student1.png"
+      "imageUrl": "Student10.png"
     }
   ]
 }
