@@ -17,11 +17,13 @@ a {
     transition: color 0.3s ease;
     font-weight: bold;
 }
-a:hover, .button-hover {
+
+a:hover,
+.button-hover {
     color: blue;
     background-color: rgb(255, 255, 0, 0.15);
     transition: color 0.3s ease;
-    font-weight: bold;  
+    font-weight: bold;
 }
 
 .btn-danger {
@@ -33,6 +35,40 @@ a:hover, .button-hover {
     transition: color 0.3s ease;
     font-weight: bold;
 
+}
+
+.btn-danger:hover {
+    color: black;
+    background-color: rgb(255, 0, 0, 0.15);
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+button.delete-button {
+    background-color: red;
+    color: black;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    display: inline-flex;
+    place-content: center;
+    align-items: center;
+    font-size: large;
+    transition: none 0s ease 0s;
+    cursor: move;
+    margin-left: 45%;
+    margin-right: 40px;
+    margin-bottom: 1em;
+}
+
+button.delete-button:hover {
+    background-color: orange;
+    color:darkred;
+    transition: background-color cubic-bezier(0.075, 0.82, 0.165, 1);
+    font-weight: bold;
 }
 
 form.login {
@@ -50,13 +86,16 @@ form.login {
 
 }
 
-h1, h2 {
+h1,
+h2 {
     text-align: center;
 }
 
-h3, h4 {
-margin-left : 5%;
-margin-right : 5%;}
+h3,
+h4 {
+    margin-left: 5%;
+    margin-right: 5%;
+}
 
 img {
     border-radius: 0.5rem;
@@ -64,8 +103,8 @@ img {
     height: auto;
     margin: 0 auto;
     display: block;
-max-width: 40rem;
-max-height: 40rem;
+    max-width: 40rem;
+    max-height: 40rem;
 }
 
 img.minilogo {
@@ -81,6 +120,7 @@ label {
     text-align: left;
     margin-bottom: 0;
 }
+
 #loginBtn {
     margin: 0 auto;
     display: block;
@@ -90,7 +130,7 @@ label {
     background-color: grey;
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
     text-align: center;
-    font-weight: bold;  
+    font-weight: bold;
     text-decoration: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -114,20 +154,22 @@ nav a {
     text-decoration: none;
 }
 
-nav.admin-menu{
+nav.admin-menu {
     flex-direction: column;
 }
 
 p {
-    margin-left : 5%;
-    margin-right : 5%;
+    margin-left: 5%;
+    margin-right: 5%;
     text-align: justify;
 }
+
 footer {
     padding: 10px;
     margin: 5px;
-    background-color: lightsteelblue
-;}
+    background-color: lightsteelblue;
+}
+
 footer ul {
     list-style: none;
     display: flex;
@@ -143,4 +185,3 @@ footer a {
 footer p {
     text-align: center;
 }
-
