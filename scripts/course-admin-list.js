@@ -14,24 +14,36 @@ async function initPage() {
     courses.forEach((course) => {
         // Add courses to page
         coursesGallery.appendChild(createCard(course));
-        // console.log(course);
-
+        // Add a delete button
+        const button = document.createElement('button');
+        button.classList.add('delete-button');
+        button.setAttribute('id', course.id);
+        button.textContent = 'Delete';
+        coursesGallery.appendChild(button);
     });
 
     const students = await listAllStudents();
     students.forEach((student) => {
         // Add students to page
         studentsGallery.appendChild(createCardS(student));
-
-        // console.log(student);
+        // Add a delete button
+        const button = document.createElement('button');
+        button.classList.add('delete-button');
+        button.setAttribute('id', student.id);
+        button.textContent = 'Delete';
+        studentsGallery.appendChild(button);
     })
 
     const teachers = await listAllTeachers();
     teachers.forEach((teacher) => {
         // Add teachers to page
         teachersGallery.appendChild(createCardT(teacher));
-        // console.log(teacher);
-    })
+        // Add a delete button
+        const button = document.createElement('button');
+        button.classList.add('delete-button');
+        button.setAttribute('id', teacher.id);
+        button.textContent = 'Delete';
+        teachersGallery.appendChild(button);    })
 
     // Render data. Fetched from db.json and displayed on the page.
     const images = document.querySelectorAll('.course-image img, .student-image img, .teacher-image img');
