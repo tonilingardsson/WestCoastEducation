@@ -73,13 +73,7 @@
         <main>
           <section class="container">
             <h1 class="page-title">Update course</h1>
-            <div class="btn-container">
-              <button
-                id="delete"
-                class="btn btn-danger">
-                DELETE course
-              </button>
-            </div>
+            
             <form id="updateCourseForm">
                 <div class="form-control">
                     <label for="courseId">Course ID</label>
@@ -130,17 +124,31 @@
                         type="text"
                         name="imageUrl"
                         id="imageUrl"
-                        src="/images/IT Automation3.jpg"
-                        placeholder="Type photo URL" />
+                        src=""
+                        placeholder="Type: /images/IT AutomationX.jpg" />
+                        <button type="search" class="btn" for="search">Search</button>
+                      </div>
+                      <div class="form-control">
+                        <label for="email">Email</label>
+                        <textarea
+                          name="email"
+                          id="email"
+                          
+                          placeholder="Type email"
+                        ></textarea>
+                      </div>
+                  <div class="form-control">
+                    <div class="btn-container">
+                      <button
+                      type="submit" for="submit"
+                      class="btn">
+                      Save changes
+                    </button><button
+                        id="delete" for="delete"
+                        class="btn btn-danger">DELETE</button>
                     </div>
-              <div class="form-control">
-                <button
-                  type="submit"
-                  class="btn">
-                  Save changes
-                </button>
-              </div>
-            </form>
+                  </div>
+                </form>
           </section>
         </main>
         <footer>

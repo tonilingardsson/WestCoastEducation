@@ -4,167 +4,173 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title> Admin - Edit Student | West Coast Cars</title>
-        <meta name="description" content="Edit Student admin panel for West Coast Education">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../style.css">
-        <script src="../scripts/edit-student.js" async defer></script>
-    </head>
-    <body class="grid-container">
-      <header>
-        <nav class="admin-menu">
-          <ul class="admin-menu">
-            <li>
-              <a href="../index.html"
-                ><img
-                  class="minilogo"
-                  src="../images/minilogo.png"
-                  alt="Wescoast Education logo"
-              /></a>
-            </li>
-            <li class="menu-item">
-              <a href="/admin/index.html" title="Admin panel">Admin panel</a>
-            </li>
-            <li class="menu-item">
-              <a
-                href="/admin/communication.html"
-                title="Communicate with teachers and students via chat or email"
-                >Communication</a
-              >
-            </li>
-          </ul>
-          <ul class="add-menu" id="add-menu">
-            <li class="menu-item">
-              <a href="/admin/add-course.html" title="Add courses">Add courses</a>
-            </li>
-            <li class="menu-item">
-              <a href="/admin/add-student.html" title="Add or delete students"
-                >Add students</a
-              >
-            </li>
-            <li class="menu-item">
-              <a href="/admin/add-teacher.html" title="Add teachers"
-                >Add teachers</a
-              >
-            </li>
-          </ul>
-          <ul class="edit-menu" id="edit-menu">
-            <li class="menu-item">
-              <a href="/admin/edit-course.html" title="Edit or delete courses"
-                >Manage courses</a
-              >
-            </li>
-            <li class="menu-item">
-              <a href="/admin/edit-student.html" title="Edit students"
-                >Manage students</a
-              >
-            </li>
-            <li class="menu-item">
-              <a href="/admin/edit-teacher.html" title="Edit teachers"
-                >Manage teachers</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </header>
-        <main>
-          <section class="container">
-            <h1 class="page-title">Update student</h1>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Admin - Edit Student | West Coast Cars</title>
+    <meta
+      name="description"
+      content="Edit Student admin panel for West Coast Education"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../scripts/edit-student.js" async defer></script>
+  </head>
+  <body class="grid-container">
+    <header>
+      <nav class="admin-menu">
+        <ul class="admin-menu">
+          <li>
+            <a href="../index.html"
+              ><img
+                class="minilogo"
+                src="../images/minilogo.png"
+                alt="Wescoast Education logo"
+            /></a>
+          </li>
+          <li class="menu-item">
+            <a href="/admin/index.html" title="Admin panel">Admin panel</a>
+          </li>
+          <li class="menu-item">
+            <a
+              href="/admin/communication.html"
+              title="Communicate with teachers and students via chat or email"
+              >Communication</a
+            >
+          </li>
+        </ul>
+        <ul class="add-menu" id="add-menu">
+          <li class="menu-item">
+            <a href="/admin/add-course.html" title="Add courses">Add courses</a>
+          </li>
+          <li class="menu-item">
+            <a href="/admin/add-student.html" title="Add or delete students"
+              >Add students</a
+            >
+          </li>
+          <li class="menu-item">
+            <a href="/admin/add-teacher.html" title="Add teachers"
+              >Add teachers</a
+            >
+          </li>
+        </ul>
+        <ul class="edit-menu" id="edit-menu">
+          <li class="menu-item">
+            <a href="/admin/edit-course.html" title="Edit or delete courses"
+              >Manage courses</a
+            >
+          </li>
+          <li class="menu-item">
+            <a href="/admin/edit-student.html" title="Edit students"
+              >Manage students</a
+            >
+          </li>
+          <li class="menu-item">
+            <a href="/admin/edit-teacher.html" title="Edit teachers"
+              >Manage teachers</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="container">
+        <h1 class="page-title">Update student</h1>
+
+        <form id="updateStudentForm">
+          <div class="form-control">
+            <label for="studentId">Student ID</label>
+            <input
+              type="text"
+              name="studentId"
+              id="studentId"
+              placeholder="Assign student ID"
+            />
+          </div>
+          <div class="form-control">
+            <label for="firstName">First name</label>
+            <input
+              type="text"
+              name="firstName"
+              id="firstName"
+              placeholder="Type first name"
+            />
+          </div>
+          <div class="form-control">
+            <label for="lastName">Last name</label>
+            <input
+              type="text"
+              name="lastName"
+              id="lastName"
+              placeholder="Type last name"
+            />
+          </div>
+          <div class="form-control">
+            <label for="birthYear">Birth year</label>
+            <input
+              type="text"
+              name="birthYear"
+              id="birthYear"
+              placeholder="Type birth year"
+            />
+          </div>
+          <div class="form-control">
+            <label for="educationLevel">Highest education</label>
+            <input
+              type="text"
+              name="educationLevel"
+              id="educationLevel"
+              placeholder="Type education level"
+            />
+          </div>
+          <div class="form-control">
+            <label for="averageRate">Education rate</label>
+            <input
+              type="text"
+              name="educationRate"
+              id="educationRate"
+              placeholder="Type education rate"
+            />
+          </div>
+          <div class="form-control">
+            <label for="imageUrl">Photo URL</label>
+            <input
+              type="text"
+              name="imageUrl"
+              id="imageUrl"
+              src=""
+              placeholder="Type: /images/StudentX.png"
+            />
+            <button type="search" class="btn" for="search">Search</button>
+          </div>
+          <div class="form-control">
+            <label for="email">Email</label>
+            <textarea
+              name="email"
+              id="email"
+              placeholder="Type email"
+            ></textarea>
+          </div>
+          <div class="form-control">
             <div class="btn-container">
-              <button
-                id="delete"
-                class="btn btn-danger">
-                DELETE student
+              <button type="submit" for="submit" class="btn">
+                Save changes</button
+              ><button id="delete" for="delete" class="btn btn-danger">
+                DELETE
               </button>
             </div>
-            <form id="updateStudentForm">
-                <div class="form-control">
-                    <label for="studentId">Student ID</label>
-                    <input
-                      type="text"
-                      name="studentId"
-                      id="studentId"
-                      placeholder="Assign student ID" />
-                  </div>
-                  <div class="form-control">
-                    <label for="firstName">First name</label>
-                    <input
-                      type="text"
-                      name="firstName"
-                      id="firstName"
-                      placeholder="Type first name" />
-                  </div>
-                  <div class="form-control">
-                    <label for="lastName">Last name</label>
-                    <input
-                      type="text"
-                      name="lastName"
-                      id="lastName"
-                      placeholder="Type last name" />
-                  </div>
-                  <div class="form-control">
-                    <label for="birthYear">Birth year</label>
-                    <input
-                      type="text"
-                      name="birthYear"
-                      id="birthYear"
-                      placeholder="Type birth year" />
-                  </div>
-                  <div class="form-control">
-                    <label for="educationLevel">Highest education</label>
-                    <input
-                      type="text"
-                      name="educationLevel"
-                      id="educationLevel"
-                      placeholder="Type education level" />
-                  </div>
-                  <div class="form-control">
-                    <label for="averageRate">Education rate</label>
-                    <input
-                      type="text"
-                      name="educationRate"
-                      id="educationRate"
-                      placeholder="Type education rate" />
-                  </div>
-                  <div class="form-control">
-                    <label for="imageUrl">Photo URL</label>
-                    <input
-                      type="text"
-                      name="imageUrl"
-                      id="imageUrl"
-                      src="/images/StudentX.png"
-                      placeholder="Type photo URL" />
-                  </div>
-                  <div class="form-control">
-                    <label for="email">Email</label>
-                    <textarea
-                      name="email"
-                      id="email"
-                      cols="30"
-                      rows="10"
-                      placeholder="Type email"></textarea>
-                  </div>
-              <div class="form-control">
-                <button
-                  type="submit"
-                  class="btn">
-                  Save changes
-                </button>
-              </div>
-            </form>
-          </section>
-        </main>
-        <footer>
-          <ul>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Use</a></li>
-          </ul>
-          <p>&copy; 2024 West Coast Education. All rights reserved.</p>
-        </footer>
-    </body>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <ul>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Use</a></li>
+      </ul>
+      <p>&copy; 2024 West Coast Education. All rights reserved.</p>
+    </footer>
+  </body>
 </html>

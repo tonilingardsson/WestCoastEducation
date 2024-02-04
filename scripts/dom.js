@@ -60,7 +60,7 @@ const createStudentInfo = (student) => {
 };
 const createTeacherInfo = (teacher) => {
     const paragraph = document.createElement('p');
-    paragraph.appendChild(document.createTextNode(`${teacher.name} - ${teacher.email}`));
+    paragraph.appendChild(document.createTextNode(`${teacher.name} - ${teacher.courses[0].name} & ${teacher.courses[1].name}`));
     // courseInfo.classList.add('course-info');
     return paragraph;
 };

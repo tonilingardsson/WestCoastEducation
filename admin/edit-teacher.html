@@ -73,13 +73,7 @@
         <main>
           <section class="container">
             <h1 class="page-title">Update teacher</h1>
-            <div class="btn-container">
-              <button
-                id="delete"
-                class="btn btn-danger">
-                DELETE teacher
-              </button>
-            </div>
+            
             <form id="updateTeacherForm">
                 <div class="form-control">
                     <label for="teacherId">Teacher ID</label>
@@ -141,26 +135,30 @@
                       type="text"
                       name="imageUrl"
                       id="imageUrl"
-                      src="/images/TeacherX.png"
-                      placeholder="Type photo URL"
+                      src=""
+                      placeholder="Type: /images/NewITTeacher.jpg"
                     />
+                    <button type="search" class="btn" for="search">Search</button>
                   </div>
                   <div class="form-control">
                     <label for="email">Email</label>
                     <textarea
                       name="email"
                       id="email"
-                      cols="30"
-                      rows="10"
+                      
                       placeholder="Type email"
                     ></textarea>
                   </div>
               <div class="form-control">
-                <button
-                  type="submit"
+                <div class="btn-container">
+                  <button
+                  type="submit" for="submit"
                   class="btn">
                   Save changes
-                </button>
+                </button><button
+                    id="delete" for="delete"
+                    class="btn btn-danger">DELETE</button>
+                </div>
               </div>
             </form>
           </section>
