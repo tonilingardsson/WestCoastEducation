@@ -98,15 +98,34 @@ const createModal = (modalObject) => {
     const image = document.createElement('img');
     image.setAttribute('src', `../images/${modalObject.imageUrl}`);
     image.setAttribute('alt', modalObject.name);
-    // Add info-text to the image
+    // Add info-text below the image
     const modalObjectInfo = document.createElement('p');
     modalObjectInfo.classList.add('info-text');
     const textContent = document.createTextNode(`${modalObject.name} - ${modalObject.duration} - Rating: ${modalObject.averageRating}/5`);
+    // Here is where we will add the apply button
+    const applyButton = document.createElement('button');
+    // applyButton.classList.add('apply-button btn');
+    
+    // applyButton.setAttribute('id', modalObject.id);
+    const applyButtonText = document.createTextNode('Apply now!');
+    // applyButton.addEventListener('click', () => {
+    //     // TODO: Add logic to apply for a course
+    //     const user = JSON.parse(localStorage.getItem('user'));
+    //     const loginUrl = 'http://localhost:3000/pages/login.html';
+    //     console.log('Applied for course');
+    //     if(user === null) {
+    //         alert(`Please login to apply for a course here: ${loginUrl}`);
+    //     } else {
+    //         alert('Applied for course');
+    //     }
+    // })
+
 
     modalObjectInfo.appendChild(textContent);
     container.appendChild(image);
     modal.appendChild(container);
     modal.appendChild(modalObjectInfo);
+    modal.appendChild(applyButton);
 
     return modal;
 }
