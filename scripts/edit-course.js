@@ -24,22 +24,22 @@ const getCourse = async (id) => {
 
 const loadDataToForm = (course) => {
    console.log(form.elements);
-    // const entries = new URLSearchParams(course).entries();
-    // // Iterate over the dictionary list
-    // for (let [key, value] of entries) {
-    //     if (key !== 'id') {
-    //         const input = form.elements[key];
-    //         input.value = value;
-    //     }
-    // }
-    // console.log(...entries);
+    const entries = new URLSearchParams(course).entries();
+    // Iterate over the dictionary list
+    for (let [key, value] of entries) {
+        if (key !== 'id') {
+            const input = form.elements[key];
+            input.value = value;
+        }
+    }
+    console.log(...entries);
 };
 
 const updateCourse = async (e) => {
     e.preventDefault();
     const course = new FormData(form);
     const object = convertFormDataToJson(course);
-    const url = `http://localhost:3000/courses/${courseId}`;
+    const url = `http://localhost:3000/courses/${id}`;
     const http = new HttpClient(url);
     await http.put(object);
     console.log(course);
@@ -57,6 +57,6 @@ const updateCourse = async (e) => {
 // Get ready these functions when the document is ready
 document.addEventListener('DOMContentLoaded', initPage);
 // Add an event listener to the updateCourse form
-form.addEventListener('submit', updateCourse);
+// form.addEventListener('submit', updateCourse);
 // // Make the delete button work!
 // deleteButton.addEventListener('click', deleteCourse);

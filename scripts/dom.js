@@ -7,7 +7,7 @@ const createCard = (course) => {
     div.classList.add('course-image', 'img');
     div.appendChild(createImage(course.imageUrl, course.id));
     div.appendChild(createCourseInfo(course));
-    
+
     return div;
 }
 
@@ -28,7 +28,7 @@ const createCardT = (teacher) => {
     div.appendChild(createImage(teacher.imageUrl, teacher.id));
     div.appendChild(createTeacherInfo(teacher));
     // button.appendChild(createDeleteButton(teacher.id));
-    
+
     return div;
 }
 
@@ -41,7 +41,7 @@ const createImage = (imageUrl, id) => {
     image.setAttribute('src', `/images/${imageUrl}`);
     // Set the data-id of the image
     image.setAttribute('id', id);
- 
+
     return image;
 };
 
@@ -78,8 +78,8 @@ const createCourseList = (courses, element) => {
         container.appendChild(createSpan(course.imageUrl));
         element.appendChild(container);
         const button = deleteStudent(student.id);
-    button.appendChild(createDeleteButton(student.id));
-    element.appendChild(button);
+        button.appendChild(createDeleteButton(student.id));
+        element.appendChild(button);
     });
 };
 
@@ -101,7 +101,7 @@ const addImageClickHandler = (images) => {
         const courseId = image.getAttribute('id');
 
         image.addEventListener('click', () => {
-            alert(`This couse has this id:${id} and the picture's source is: ${src} - `);
+            alert(`This couse has this id: ${courseId} and the picture's source is: ${src} - `);
         });
     });
     // const image = event.target;
@@ -116,6 +116,8 @@ const deleteStudent = (id) => {
     button.textContent = 'Delete';
     return button;
 }
+
+
 
 // Export the functions to be used in other files
 // This export type is called "named export"

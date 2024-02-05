@@ -78,4 +78,64 @@ const listAllTeachers = async () => {
     }   
 }
 
+// Display a modal for all the objects: course, student, and teacher
+
+const main = document.querySelector('main2');
+const displayModal = (modalObject) => {
+    const modal = createModal(modalObject);
+    const overlay = createOverlay();
+
+    main2.appendChild(modal, overlay, main);
+}
+const createModal = (modalObject) => {
+    const modal = document.createElement('div');
+    modal.classList.add('modal');
+    modal.classList.add('flex-v');
+    // Inner content of the modal
+    const container = document.createElement('div');
+    container.classList.add('modal-container');
+    // Place an image
+    const image = document.createElement('img');
+    image.setAttribute('src', `../images/${modalObject.imageUrl}`);
+    image.setAttribute('alt', modalObject.name);
+    // Add info-text to the image
+    const modalObjectInfo = document.createElement('p');
+    modalObjectInfo.classList.add('info-text');
+    const textContent = document.createTextNode(`${modalObject.name} - ${modalObject.duration} - Rating: ${modalObject.averageRating}/5`);
+
+    modalObjectInfo.appendChild(textContent);
+    container.appendChild(image);
+    modal.appendChild(container);
+    modal.appendChild(modalObjectInfo);
+
+    return modal;
+}
+
+const createOverlay = () => {
+    const overlay = document.createElement('div');
+    overlay.classList.add('overlay');
+    return overlay;
+}
+
+// Create a E6 class to handle the modal
+class ModalObject {
+    constructor(id, name, duration, rating, imageUrl) {
+        // You are writing the constructor pairing JSON db key and contructor key
+        // MODEL this.objectKey = constructorKey;
+        this.id = id;
+        // this.modalObject = modalObject;
+        this.name = name;
+        this.duration = duration;
+        this.averageRating = rating;
+        // this.description = description;
+        // this.applyBtn = applyBtn;
+        this.imageUrl = imageUrl;
+
+    }
+}
+// Don't forget to add the values for all the keys within the constructor object
+const exampleModal = new ModalObject('modalObject', 'course', '8 weeks',5, 'CloudComputing1.jpg');
+
+displayModal(exampleModal);
+
 document.addEventListener('DOMContentLoaded', initPage);
