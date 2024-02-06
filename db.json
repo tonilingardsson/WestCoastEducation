@@ -6,7 +6,8 @@
       "duration": "8 weeks",
       "teacherId": 102,
       "averageRating": 5,
-      "imageUrl": "Blockchain.jpg"
+      "imageUrl": "Blockchain.jpg",
+      "url": "blockchain-development"
     },
     {
       "id": 302,
@@ -14,7 +15,8 @@
       "duration": "8 weeks",
       "teacherId": 101,
       "averageRating": 4.5,
-      "imageUrl": "CloudComputing1.jpg"
+      "imageUrl": "CloudComputing1.jpg",
+      "url": "cloud-computing"
     },
     {
       "id": 303,
@@ -22,14 +24,16 @@
       "duration": "8 weeks",
       "teacherId": 101,
       "averageRating": 4.5,
-      "imageUrl": "Cybersecurity.jpg"
+      "imageUrl": "Cybersecurity.jpg",
+      "url": "cybersecurity-fundamentals"
     },{
       "id": 304,
       "name": "Product Management",
       "duration": "8 weeks",
       "teacherId": 102,
       "averageRating": 4.5,
-      "imageUrl": "Product_Management.jpg"
+      "imageUrl": "Product_Management.jpg",
+      "url": "product-management"
     },
     {
       "id": 341,
@@ -37,7 +41,8 @@
       "duration": "8 weeks",
       "teacherId": 101,
       "averageRating": 4.5,
-      "imageUrl": "Cybersecurity2.jpg"
+      "imageUrl": "Cybersecurity2.jpg",
+      "url": "cybersecurity-fundamentals-remote"
     },
     {
       "id": 342,
@@ -45,7 +50,8 @@
       "duration": "8 weeks",
       "teacherId": 103,
       "averageRating": 4.5,
-      "imageUrl": "DigitalMarketing1.jpg"
+      "imageUrl": "DigitalMarketing1.jpg",
+      "url": "digital-marketing-remote"
     },
     {
       "id": 343,
@@ -53,7 +59,8 @@
       "duration": "8 weeks",
       "teacherId": 102,
       "averageRating": 4.5,
-      "imageUrl": "IT Automation2.jpg"
+      "imageUrl": "IT Automation2.jpg",
+      "url": "it-automation-remote"
     },
     {
       "id": 344,
@@ -61,7 +68,8 @@
       "duration": "18 weeks",
       "teacherId": 102,
       "averageRating": 4.5,
-      "imageUrl": "IT AutomationX.jpg"
+      "imageUrl": "IT AutomationX.jpg",
+      "url": "test-automation-remote"
     }
   ],
   "students": [
