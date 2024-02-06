@@ -79,8 +79,8 @@ const listAllTeachers = async () => {
 }
 
 // Display a modal for all the objects: course, student, and teacher
-
-const main = document.querySelector('main2');
+// This (below) is the element (from the DOM) that is going to be manipulated
+const main = document.querySelector('#main2');
 const displayModal = (modalObject) => {
     const modal = createModal(modalObject);
     const overlay = createOverlay();
@@ -96,7 +96,7 @@ const createModal = (modalObject) => {
     container.classList.add('modal-container');
     // Place an image
     const image = document.createElement('img');
-    image.setAttribute('src', `../images/${modalObject.imageUrl}`);
+    image.setAttribute('src', `../images/${modalObject.imageUrl}.html`);
     image.setAttribute('alt', modalObject.name);
     // Add info-text below the image
     const modalObjectInfo = document.createElement('p');
@@ -104,10 +104,12 @@ const createModal = (modalObject) => {
     const textContent = document.createTextNode(`${modalObject.name} - ${modalObject.duration} - Rating: ${modalObject.averageRating}/5`);
     // Here is where we will add the apply button
     const applyButton = document.createElement('button');
-    // applyButton.classList.add('apply-button btn');
+    applyButton.classList.add('btn','apply_button');
+    applyButton.setAttribute('href', `./courses/${modalObject.id}`);
+    // Add text 'Apply now!'inside the apply button
+    const applyButtonText = document.createTextNode('Apply now!');
     
     // applyButton.setAttribute('id', modalObject.id);
-    const applyButtonText = document.createTextNode('Apply now!');
     // applyButton.addEventListener('click', () => {
     //     // TODO: Add logic to apply for a course
     //     const user = JSON.parse(localStorage.getItem('user'));
@@ -126,6 +128,7 @@ const createModal = (modalObject) => {
     modal.appendChild(container);
     modal.appendChild(modalObjectInfo);
     modal.appendChild(applyButton);
+    modal.appendChild(applyButtonText);
 
     return modal;
 }
