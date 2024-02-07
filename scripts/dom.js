@@ -98,10 +98,13 @@ const addImageClickHandler = (images) => {
         const src = image.getAttribute('src');
         // Here it used id, so I need to call "id" 
         // to get the id of the all images: courses, students, and teachers.
-        const courseId = image.getAttribute('id');
 
+  console.log(courseId, url);
         image.addEventListener('click', () => {
-            alert(`This couse has this id: ${courseId} and the picture's source is: ${src} - `);
+            // Redirect to the specific url
+            location.href = `./courses/${courseId}.html`;
+          
+            // alert(`This couse has this id: ${courseId} and the picture's source is: ${src} - `);
         });
     });
     // const image = event.target;

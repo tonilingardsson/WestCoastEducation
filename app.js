@@ -8,12 +8,12 @@ const teachersGallery = document.querySelector('#teachers-gallery');
 async function initPage() {
     // Load data
     const courses = await listAllCourses();
-//     const teachers = await listAllTeachers();
+    //     const teachers = await listAllTeachers();
     courses.forEach((course) => {
         // Add courses to page
-    coursesGallery.appendChild(createCard(course));
+        coursesGallery.appendChild(createCard(course));
         // console.log(course);
-        
+
     });
 
     const students = await listAllStudents();
@@ -23,17 +23,17 @@ async function initPage() {
         // console.log(student);
     })
 
-const teachers = await listAllTeachers();
+    const teachers = await listAllTeachers();
     teachers.forEach((teacher) => {
         // Add teachers to page
         teachersGallery.appendChild(createCardT(teacher));
     })
 
     // Render data. Fetched from db.json and displayed on the page.
-    const images =  document.querySelectorAll('.course-image img, .student-image img', '.teacher-image img');
+    const images = document.querySelectorAll('.course-image img, .student-image img', '.teacher-image img');
     addImageClickHandler(images);
-    
-    };
+
+};
 
 
 const listAllCourses = async () => {
@@ -50,7 +50,7 @@ const listAllCourses = async () => {
         throw new Error(`Network response was not ok. Error: ${response.status} ${response.statusText}`);
         // Error handling and rendering a message for the user, and debugging.
     }
-// AI Suggestion: Use fetch to fetch data from db.json
+    // AI Suggestion: Use fetch to fetch data from db.json
     // return fetch('db.json')
     //     .then(res => res.json())
     //     .then(data => data.courses);
@@ -75,7 +75,7 @@ const listAllTeachers = async () => {
         return result;
     } else {
         throw new Error(`Network response was not ok. Error: ${response.status} ${response.statusText}`);
-    }   
+    }
 }
 
 // Display a modal for all the objects: course, student, and teacher
@@ -85,7 +85,9 @@ const displayModal = (modalObject) => {
     const modal = createModal(modalObject);
     const overlay = createOverlay();
 
-    main2.appendChild(modal, overlay, main);
+    main2.appendChild(modal);
+    // main2.appenChild(main);
+    main2.appendChild(overlay);
 }
 const createModal = (modalObject) => {
     const modal = document.createElement('div');
@@ -104,11 +106,14 @@ const createModal = (modalObject) => {
     const textContent = document.createTextNode(`${modalObject.name} - ${modalObject.duration} - Rating: ${modalObject.averageRating}/5`);
     // Here is where we will add the apply button
     const applyButton = document.createElement('button');
-    applyButton.classList.add('btn','apply_button');
-    applyButton.setAttribute('href', `./courses/${modalObject.id}`);
+    const applyButtonText = document.createTextNode(`Apply now!`);
+    // applyButton.setAttribute('type', 'submit');
+    applyButton.classList.add('btn', 'apply_button');
+    applyButton.setAttribute('href', `./courses/${modalObject.id}.html`);
     // Add text 'Apply now!'inside the apply button
-    const applyButtonText = document.createTextNode('Apply now!');
-    
+    // applyButton.innerText = 'Apply now!';
+
+
     // applyButton.setAttribute('id', modalObject.id);
     // applyButton.addEventListener('click', () => {
     //     // TODO: Add logic to apply for a course
@@ -123,12 +128,13 @@ const createModal = (modalObject) => {
     // })
 
 
-    modalObjectInfo.appendChild(textContent);
-    container.appendChild(image);
+    
     modal.appendChild(container);
+    container.appendChild(image);
     modal.appendChild(modalObjectInfo);
+    modalObjectInfo.appendChild(textContent);
     modal.appendChild(applyButton);
-    modal.appendChild(applyButtonText);
+    applyButton.appendChild(applyButtonText);
 
     return modal;
 }
@@ -139,9 +145,9 @@ const createOverlay = () => {
     return overlay;
 }
 
-// Create a E6 class to handle the modal
+// Create a E6 class to handle the modal with all the required keys
 class ModalObject {
-    constructor(id, name, duration, rating, imageUrl) {
+    constructor(id, name, duration, rating, imageUrl, url) {
         // You are writing the constructor pairing JSON db key and contructor key
         // MODEL this.objectKey = constructorKey;
         this.id = id;
@@ -152,12 +158,13 @@ class ModalObject {
         // this.description = description;
         // this.applyBtn = applyBtn;
         this.imageUrl = imageUrl;
+        this.url = `./courses/${url}.html`;
 
     }
 }
 // Don't forget to add the values for all the keys within the constructor object
-const exampleModal = new ModalObject('modalObject', 'course', '8 weeks',5, 'CloudComputing1.jpg');
+// const exampleModal = new ModalObject('modalObject', 'course', '8 weeks', 5, 'CloudComputing1.jpg', 'cloud-computing');
 
-displayModal(exampleModal);
+// displayModal(exampleModal);
 
 document.addEventListener('DOMContentLoaded', initPage);
