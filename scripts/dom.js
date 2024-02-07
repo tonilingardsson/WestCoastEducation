@@ -7,6 +7,7 @@ const createCard = (course) => {
     div.classList.add('course-image', 'img');
     div.appendChild(createImage(course.imageUrl, course.id));
     div.appendChild(createCourseInfo(course));
+    div.appendChild(createCourseInfo2(course));
 
     return div;
 }
@@ -48,9 +49,16 @@ const createImage = (imageUrl, id) => {
 const createCourseInfo = (course) => {
     const paragraph = document.createElement('p');
     paragraph.appendChild(document.createTextNode(`${course.name} - ${course.duration} - Rating: ${course.averageRating}/5`));
-    // courseInfo.classList.add('course-info');
+     // courseInfo.classList.add('course-info');
     return paragraph;
 };
+
+const createCourseInfo2 = (course) => {
+    const paragraph = document.createElement('p');
+    paragraph.appendChild(document.createTextNode(`${course.description}`));
+    return paragraph;
+    
+}
 
 const createStudentInfo = (student) => {
     const paragraph = document.createElement('p');
@@ -98,8 +106,9 @@ const addImageClickHandler = (images) => {
         const src = image.getAttribute('src');
         // Here it used id, so I need to call "id" 
         // to get the id of the all images: courses, students, and teachers.
-
-  console.log(courseId, url);
+        const courseId = image.getAttribute('id');
+        const url = `http://localhost:5500/courses/${courseId}.html`
+//   console.log(courseId, url);
         image.addEventListener('click', () => {
             // Redirect to the specific url
             location.href = `./courses/${courseId}.html`;

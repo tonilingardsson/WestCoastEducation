@@ -3,6 +3,7 @@
     {
       "id": 301,
       "name": "Blockchain Development",
+      "description": "Learn how to build decentralized applications. With this course you will learn how to build a full stack web and mobile application using the Ethereum blockchain. This course will also cover smart contracts and the Ethereum ecosystem.",
       "duration": "8 weeks",
       "teacherId": 102,
       "averageRating": 5,
@@ -12,6 +13,7 @@
     {
       "id": 302,
       "name": "Cloud Computing",
+      "description": "In this course, you will learn how to build a web application and deploy it to the cloud. You will also learn how to build a mobile application and deploy it to the cloud.",
       "duration": "8 weeks",
       "teacherId": 101,
       "averageRating": 4.5,
@@ -21,6 +23,7 @@
     {
       "id": 303,
       "name": "Cybersecurity Fundamentals",
+      "description": "This course is designed for beginners who want to learn about cybersecurity. In this course you will learn about different types of attacks and how to prevent them.",
       "duration": "8 weeks",
       "teacherId": 101,
       "averageRating": 4.5,
@@ -29,6 +32,7 @@
     },{
       "id": 304,
       "name": "Product Management",
+      "description": "Good developers need great leaders. In this course, you will learn how to become a great leader. You will also learn how to become a great developer.",
       "duration": "8 weeks",
       "teacherId": 102,
       "averageRating": 4.5,
@@ -38,6 +42,7 @@
     {
       "id": 341,
       "name": "Cybersecurity Fundamentals | Remote",
+      "description": "This remote course is designed for beginners who want to learn about cybersecurity. In this course you will learn about different types of attacks and how to prevent them.",
       "duration": "8 weeks",
       "teacherId": 101,
       "averageRating": 4.5,
@@ -47,6 +52,7 @@
     {
       "id": 342,
       "name": "Digital Marketing | Remote",
+      "description": "Quality products does not sell itself. In this remote course, you will learn how to sell your products.",
       "duration": "8 weeks",
       "teacherId": 103,
       "averageRating": 4.5,
@@ -56,6 +62,7 @@
     {
       "id": 343,
       "name": "IT Automation | Remote",
+      "description": "In this remote course, you will learn how to automate your processes.",
       "duration": "8 weeks",
       "teacherId": 102,
       "averageRating": 4.5,
@@ -65,6 +72,7 @@
     {
       "id": 344,
       "name": "Test Automation | Remote",
+      "description": "In this remote course, you will learn how to automate your processes.",
       "duration": "18 weeks",
       "teacherId": 102,
       "averageRating": 4.5,
