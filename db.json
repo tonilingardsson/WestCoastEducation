@@ -29,7 +29,8 @@
       "averageRating": 4.5,
       "imageUrl": "Cybersecurity.jpg",
       "url": "cybersecurity-fundamentals"
-    },{
+    },
+    {
       "id": 304,
       "name": "Product Management",
       "description": "Good developers need great leaders. In this course, you will learn how to become a great leader. You will also learn how to become a great developer.",
@@ -78,6 +79,76 @@
       "averageRating": 4.5,
       "imageUrl": "IT AutomationX.jpg",
       "url": "test-automation-remote"
+    },
+    {
+      "courseId": "",
+      "courseName": "",
+      "courseDuration": "",
+      "teacherId": "",
+      "courseAverageRating": "",
+      "imageUrl": "",
+      "url": "",
+      "id": 345
+    },
+    {
+      "courseId": "1",
+      "courseName": "1",
+      "courseDuration": "1",
+      "teacherId": "1",
+      "courseAverageRating": "1",
+      "imageUrl": "1",
+      "url": "1",
+      "id": 346
+    },
+    {
+      "courseId": "Michael",
+      "courseName": "Det",
+      "courseDuration": "Funkar",
+      "teacherId": "Att",
+      "courseAverageRating": "Spara",
+      "imageUrl": "Något",
+      "url": "oleole",
+      "id": 347
+    },
+    {
+      "courseId": "Test",
+      "courseName": "TestName",
+      "courseDuration": "Test",
+      "teacherId": "Test",
+      "courseAverageRating": "test",
+      "imageUrl": "test",
+      "url": "test",
+      "id": 348
+    },
+    {
+      "courseId": "TestID",
+      "courseName": "TestName",
+      "courseDuration": "testDuration",
+      "teacherId": "testTeacher",
+      "courseAverageRating": "testRate",
+      "imageUrl": "test.jpg",
+      "url": "test",
+      "id": 349
+    },
+    {
+      "courseId": "TTTTT",
+      "courseName": "TTTTT",
+      "courseDuration": "TTTT",
+      "teacherId": "TTT",
+      "courseAverageRating": "TTT",
+      "imageUrl": "TTT",
+      "url": "ttt",
+      "id": 350
+    },
+    {
+      "courseId": "Testa",
+      "courseName": "Testa",
+      "courseDuration": "testa",
+      "teacherId": "testa",
+      "courseAverageRating": "testa",
+      "imageUrl": "testa",
+      "url": "testa",
+      "id": 351
     }
   ],
   "students": [
@@ -160,7 +231,6 @@
           "id": 305,
           "name": "Web Development Fundamentals"
         }
-        
       ],
       "imageUrl": "TeacherWoman.jpg"
     },
@@ -172,7 +242,8 @@
         {
           "id": 306,
           "name": "Digital Marketing"
-        },{
+        },
+        {
           "id": 304,
           "name": "Product Management"
         }

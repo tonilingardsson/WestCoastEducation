@@ -54,9 +54,9 @@ async add(data) {
 }
 
 // Method to UPDATE data from a database: PUT
-async update(id, data) {
+async update(data) {
     try {
-        const response = await fetch(`${this.#url}/${id}`, {
+        const response = await fetch(`${this.#url}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -78,14 +78,13 @@ async update(id, data) {
 }
 
 // Method to DELETE data from a database: DELETE. Add an alert to the user, to confirm the deletion
-async delete(id) {
+async delete() {
     try {
         const response = await fetch(this.#url, {
             method: 'DELETE'
         });
     }
     catch (error) {
-        console.log(error);
         throw new Error(`Error fetching data from ${this.#url}`) + error;
     }
 }
