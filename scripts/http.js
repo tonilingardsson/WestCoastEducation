@@ -25,7 +25,6 @@ async get() {
         }
     }
     catch (error) {
-        console.log(error);
         throw new Error(`Error fetching data from ${this.#url}`) + error;
     }
 }
@@ -50,7 +49,7 @@ async add(data) {
     }
     catch (error) {
         console.log(error);
-        throw new Error(`Error fetching data from ${this.#url}`) + error;
+        throw new Error(`Error fetching data from ${this.#url} with this error: ${error}`);
     }
 }
 
@@ -81,7 +80,7 @@ async update(id, data) {
 // Method to DELETE data from a database: DELETE. Add an alert to the user, to confirm the deletion
 async delete(id) {
     try {
-        const response = await fetch(`${this.#url}/${id}`, {
+        const response = await fetch(this.#url, {
             method: 'DELETE'
         });
     }
