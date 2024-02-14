@@ -1,4 +1,5 @@
-// Michael creates the class HttpClient to be used in other files
+// Michael creates the class HttpClient to be used in other files.
+// This file is always the same.
 export default class HttpClient {
 // A private field
 #url = '';

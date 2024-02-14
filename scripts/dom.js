@@ -81,8 +81,8 @@ const createCourseList = (courses, element) => {
         const container = createDiv();
         container.setAttribute('courseid', course.id);
         container.appendChild(createSpan(course.name));
-        container.appendChild(createSpan(course.duration));
-        container.appendChild(createSpan(course.averageRating));
+        // container.appendChild(createSpan(course.duration));
+        // container.appendChild(createSpan(course.averageRating));
         container.appendChild(createSpan(course.imageUrl));
         element.appendChild(container);
         const button = deleteStudent(student.id);

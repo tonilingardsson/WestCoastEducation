@@ -89,6 +89,8 @@ const displayModal = (modalObject) => {
     // main2.appenChild(main);
     main2.appendChild(overlay);
 }
+
+// THIS IS NOT NECESSARY
 const createModal = (modalObject) => {
     const modal = document.createElement('div');
     modal.classList.add('modal');
@@ -146,22 +148,22 @@ const createOverlay = () => {
 }
 
 // Create a E6 class to handle the modal with all the required keys
-class ModalObject {
-    constructor(id, name, duration, rating, imageUrl, url) {
-        // You are writing the constructor pairing JSON db key and contructor key
-        // MODEL this.objectKey = constructorKey;
-        this.id = id;
-        // this.modalObject = modalObject;
-        this.name = name;
-        this.duration = duration;
-        this.averageRating = rating;
-        // this.description = description;
-        // this.applyBtn = applyBtn;
-        this.imageUrl = imageUrl;
-        this.url = `./courses/${url}.html`;
+// class ModalObject {
+//     constructor(id, name, duration, rating, imageUrl, url) {
+//         // You are writing the constructor pairing JSON db key and contructor key
+//         // MODEL this.objectKey = constructorKey;
+//         this.id = id;
+//         // this.modalObject = modalObject;
+//         this.name = name;
+//         this.duration = duration;
+//         this.averageRating = rating;
+//         // this.description = description;
+//         // this.applyBtn = applyBtn;
+//         this.imageUrl = imageUrl;
+//         this.url = `./courses/${url}.html`;
 
-    }
-}
+//     }
+// }
 // Don't forget to add the values for all the keys within the constructor object
 // const exampleModal = new ModalObject('modalObject', 'course', '8 weeks', 5, 'CloudComputing1.jpg', 'cloud-computing');
 
