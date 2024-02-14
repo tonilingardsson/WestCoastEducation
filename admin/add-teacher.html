@@ -79,21 +79,20 @@
           <label for="teacherId">Teacher ID</label>
           <input
             type="text"
-            name="teacherId"
-            id="teacherId"
-            placeholder="Assign teacher ID"
-          />
+            name="id"
+            id="id"
+            placeholder="Assign Teacher ID: 7###" />
         </div>
         <div class="form-control">
-          <label for="firstName">First name</label>
+          <label for="name">Teacher name</label>
           <input
             type="text"
-            name="firstName"
-            id="firstName"
-            placeholder="Type first name"
+            name="name"
+            id="name"
+            placeholder="Type teacher's name"
           />
         </div>
-        <div class="form-control">
+        <!-- <div class="form-control">
           <label for="lastName">Last name</label>
           <input
             type="text"
@@ -119,14 +118,14 @@
             id="lastSchool"
             placeholder="Type last school"
           />
-        </div>
+        </div> -->
         <div class="form-control">
-          <label for="courseExperience">Course experiences</label>
+          <label for="courses">Courses assigned</label>
           <input
-            type="text"
-            name="courseExperience"
-            id="courseExperience"
-            placeholder="Type course experiences"
+            type="number"
+            name="courses.id"
+            id="courses.id"
+            placeholder="Don't know? Go to courses.html"
           />
         </div>
         <div class="form-control">
@@ -136,18 +135,18 @@
             name="imageUrl"
             id="imageUrl"
             src=""
-            placeholder="Type: /images/NewITTeacher.jpg"
+            placeholder="Type: NewITTeacher.jpg"
           />
         </div>
         <div class="form-control">
           <label for="email">Email</label>
-          <textarea
+          <input
             name="email"
             id="email"
             cols="30"
             rows="10"
             placeholder="Type email"
-          ></textarea>
+          ></input>
         </div>
         <div class="form-control">
           <button type="submit" class="btn">Save</button>
@@ -163,6 +162,6 @@
       </ul>
       <p>&copy; 2024 West Coast Education. All rights reserved.</p>
     </footer>
-    <script src="../scripts/teacher.js" async defer></script>
+    <script type="module" src="../scripts/teacher.js" async defer></script>
   </body>
 </html>
