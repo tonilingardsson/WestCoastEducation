@@ -76,19 +76,28 @@
           <label for="studentId">Student ID</label>
           <input
             type="text"
-            name="studentId"
-            id="studentId"
-            placeholder="Assign student ID" />
+            name="id"
+            id="id"
+            placeholder="Assign student ID: 1###" />
         </div>
         <div class="form-control">
-          <label for="firstName">First name</label>
+          <label for="name">Student name</label>
           <input
             type="text"
-            name="firstName"
-            id="firstName"
-            placeholder="Type first name" />
+            name="name"
+            id="name"
+            placeholder="Type student's name" />
         </div>
         <div class="form-control">
+          <label for="email">Email</label>
+          <input
+            name="email"
+            id="email"
+            cols="30"
+            rows="15"
+            placeholder="Type email"></input>
+        </div>
+        <!-- <div class="form-control">
           <label for="lastName">Last name</label>
           <input
             type="text"
@@ -119,25 +128,17 @@
             name="educationRate"
             id="educationRate"
             placeholder="Type education rate" />
-        </div>
+        </div> -->
         <div class="form-control">
           <label for="imageUrl">Photo URL</label>
           <input
             type="text"
             name="imageUrl"
             id="imageUrl"
-            src="/images/StudentX.png"
-            placeholder="Type photo URL" />
+            src="StudentX.png"
+            placeholder="Type photo URL. Example: StudentX.png" />
         </div>
-        <div class="form-control">
-          <label for="email">Email</label>
-          <textarea
-            name="email"
-            id="email"
-            cols="30"
-            rows="10"
-            placeholder="Type email"></textarea>
-        </div>
+        
         <div class="form-control">
           <button
             type="submit"
