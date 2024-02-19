@@ -11,6 +11,7 @@ const initPage = async () => {
     // Load data
     courseId = location.search.split('=')[1];
     getCourse(courseId);
+    console.log(courseId);
 };
 
 
@@ -20,11 +21,13 @@ const getCourse = async (id) => {
     const http = new HttpClient(url);
     const course = await http.get();
     loadDataToForm(course);
+    
 };
 
 const loadDataToForm = (course) => {
-   console.log(form.elements);
+//    console.log(form.elements);
     const entries = new URLSearchParams(course).entries();
+    console.log(...entries);
     // Iterate over the dictionary list
     for (let [key, value] of entries) {
         if (key !== 'id') {
@@ -32,7 +35,7 @@ const loadDataToForm = (course) => {
             input.value = value;
         }
     }
-    console.log(...entries);
+    // console.log(...entries);
 };
 
 const updateCourse = async (e) => {
@@ -47,16 +50,15 @@ const updateCourse = async (e) => {
     location.href = './courses.html';
 };
 
-// const deleteCourse = async (e) => {
-//     e.preventDefault();
-//     const url = `http://localhost:3000/courses/${id}`;
-//     const http = new HttpClient(url);
-//     await http.delete();
-//     location.href = './courses.html';
-// };
+const deleteCourse = async () => {
+    const url = `http://localhost:3000/courses/${id}`;
+    const http = new HttpClient(url);
+    await http.delete();
+    location.href = './courses.html';
+};
 // Get ready these functions when the document is ready
 document.addEventListener('DOMContentLoaded', initPage);
 // Add an event listener to the updateCourse form
 // form.addEventListener('submit', updateCourse);
 // // Make the delete button work!
-// deleteButton.addEventListener('click', deleteCourse);
+deleteButton.addEventListener('click', deleteCourse);

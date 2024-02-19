@@ -85,9 +85,10 @@ const createCourseList = (courses, element) => {
         // container.appendChild(createSpan(course.averageRating));
         container.appendChild(createSpan(course.imageUrl));
         element.appendChild(container);
-        const button = deleteStudent(student.id);
-        button.appendChild(createDeleteButton(student.id));
-        element.appendChild(button);
+        const button = deleteCourse(courses.id);
+        button.addEventListener('click', deleteCourse);
+        // button.appendChild(createDeleteButton(course.id));
+        container.appendChild(button);
     });
 };
 
@@ -121,11 +122,11 @@ const addImageClickHandler = (images) => {
     // window.location.href = `course.html?id=${id}`;
 };
 
-const deleteStudent = (id) => {
+const deleteCourse = (id) => {
     const button = document.createElement('button');
     button.classList.add('delete-button');
     button.setAttribute('id', id);
-    button.textContent = 'Delete';
+    button.textContent = 'Edit';
     return button;
 }
 

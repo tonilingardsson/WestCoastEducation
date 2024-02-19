@@ -70,7 +70,6 @@ button.delete-button {
     border: none;
     border-radius: 0.5rem;
     padding: 0.5rem 1rem;
-    cursor: pointer;
     transition: background-color 0.3s ease;
     font-weight: bold;
     display: inline-flex;
@@ -78,16 +77,15 @@ button.delete-button {
     align-items: center;
     font-size: large;
     transition: none 0s ease 0s;
-    cursor: move;
     margin-left: 45%;
     margin-right: 40px;
     margin-bottom: 1em;
 }
 
 button.delete-button:hover {
-    background-color: orange;
-    color: darkred;
-    transition: background-color cubic-bezier(0.075, 0.82, 0.165, 1);
+    scale: 1.1;
+    transition: none 1s ease-in-out 1s;
+    /* transition: background-color cubic-bezier(0.075, 0.82, 0.165, 1); */
     font-weight: bold;
 }
 

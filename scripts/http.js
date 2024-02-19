@@ -78,7 +78,7 @@ async update(data) {
 }
 
 // Method to DELETE data from a database: DELETE. Add an alert to the user, to confirm the deletion
-async delete() {
+async delete(id) {
     try {
         const response = await fetch(this.#url, {
             method: 'DELETE'
