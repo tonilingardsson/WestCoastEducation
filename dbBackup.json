@@ -1,0 +1,269 @@
+{
+    "courses": [
+      {
+        "id": 301,
+        "name": "Blockchain Development",
+        "description": "Learn how to build decentralized applications. With this course you will learn how to build a full stack web and mobile application using the Ethereum blockchain. This course will also cover smart contracts and the Ethereum ecosystem.",
+        "duration": "8 weeks",
+        "teacherId": 102,
+        "averageRating": 5,
+        "imageUrl": "Blockchain.jpg",
+        "url": "blockchain-development"
+      },
+      {
+        "id": 302,
+        "name": "Cloud Computing",
+        "description": "In this course, you will learn how to build a web application and deploy it to the cloud. You will also learn how to build a mobile application and deploy it to the cloud.",
+        "duration": "8 weeks",
+        "teacherId": 101,
+        "averageRating": 4.5,
+        "imageUrl": "CloudComputing1.jpg",
+        "url": "cloud-computing"
+      },
+      {
+        "id": 303,
+        "name": "Cybersecurity Fundamentals",
+        "description": "This course is designed for beginners who want to learn about cybersecurity. In this course you will learn about different types of attacks and how to prevent them.",
+        "duration": "8 weeks",
+        "teacherId": 101,
+        "averageRating": 4.5,
+        "imageUrl": "Cybersecurity.jpg",
+        "url": "cybersecurity-fundamentals"
+      },
+      {
+        "id": 304,
+        "name": "Product Management",
+        "description": "Good developers need great leaders. In this course, you will learn how to become a great leader. You will also learn how to become a great developer.",
+        "duration": "8 weeks",
+        "teacherId": 102,
+        "averageRating": 4.5,
+        "imageUrl": "Product_Management.jpg",
+        "url": "product-management"
+      },
+      {
+        "id": 341,
+        "name": "Cybersecurity Fundamentals | Remote",
+        "description": "This remote course is designed for beginners who want to learn about cybersecurity. In this course you will learn about different types of attacks and how to prevent them.",
+        "duration": "8 weeks",
+        "teacherId": 101,
+        "averageRating": 4.5,
+        "imageUrl": "Cybersecurity2.jpg",
+        "url": "cybersecurity-fundamentals-remote"
+      },
+      {
+        "id": 342,
+        "name": "Digital Marketing | Remote",
+        "description": "Quality products does not sell itself. In this remote course, you will learn how to sell your products.",
+        "duration": "8 weeks",
+        "teacherId": 103,
+        "averageRating": 4.5,
+        "imageUrl": "DigitalMarketing1.jpg",
+        "url": "digital-marketing-remote"
+      },
+      {
+        "id": 343,
+        "name": "IT Automation | Remote",
+        "description": "In this remote course, you will learn how to automate your processes.",
+        "duration": "8 weeks",
+        "teacherId": 102,
+        "averageRating": 4.5,
+        "imageUrl": "IT Automation2.jpg",
+        "url": "it-automation-remote"
+      },
+      {
+        "id": 344,
+        "name": "Test Automation | Remote",
+        "description": "In this remote course, you will learn how to automate your processes.",
+        "duration": "18 weeks",
+        "teacherId": 102,
+        "averageRating": 4.5,
+        "imageUrl": "IT AutomationX.jpg",
+        "url": "test-automation-remote"
+      },
+      {
+        "courseId": "",
+        "courseName": "",
+        "courseDuration": "",
+        "teacherId": "",
+        "courseAverageRating": "",
+        "imageUrl": "",
+        "url": "",
+        "id": 345
+      },
+      {
+        "courseId": "1",
+        "courseName": "1",
+        "courseDuration": "1",
+        "teacherId": "1",
+        "courseAverageRating": "1",
+        "imageUrl": "1",
+        "url": "1",
+        "id": 346
+      },
+      {
+        "courseId": "Michael",
+        "courseName": "Det",
+        "courseDuration": "Funkar",
+        "teacherId": "Att",
+        "courseAverageRating": "Spara",
+        "imageUrl": "Något",
+        "url": "oleole",
+        "id": 347
+      },
+      {
+        "courseId": "Test",
+        "courseName": "TestName",
+        "courseDuration": "Test",
+        "teacherId": "Test",
+        "courseAverageRating": "test",
+        "imageUrl": "test",
+        "url": "test",
+        "id": 348
+      },
+      {
+        "courseId": "TestID",
+        "courseName": "TestName",
+        "courseDuration": "testDuration",
+        "teacherId": "testTeacher",
+        "courseAverageRating": "testRate",
+        "imageUrl": "test.jpg",
+        "url": "test",
+        "id": 349
+      },
+      {
+        "courseId": "TTTTT",
+        "courseName": "TTTTT",
+        "courseDuration": "TTTT",
+        "teacherId": "TTT",
+        "courseAverageRating": "TTT",
+        "imageUrl": "TTT",
+        "url": "ttt",
+        "id": 350
+      },
+      {
+        "courseId": "Testa",
+        "courseName": "Testa",
+        "courseDuration": "testa",
+        "teacherId": "testa",
+        "courseAverageRating": "testa",
+        "imageUrl": "testa",
+        "url": "testa",
+        "id": 351
+      }
+    ],
+    "students": [
+      {
+        "id": 1001,
+        "email": "leticia.student@gmail.com",
+        "imageUrl": "Student2.png"
+      },
+      {
+        "studentId": "Test",
+        "firstName": "Test",
+        "lastName": "Test",
+        "birthYear": "132131",
+        "educationLevel": "Test",
+        "educationRate": "Test",
+        "imageUrl": "test",
+        "email": "test@test.com",
+        "id": 1011
+      },
+      {
+        "studentId": "test2",
+        "name": "test2",
+        "email": "test2",
+        "imageUrl": "StudentX.png",
+        "id": 1012
+      },
+      {
+        "studentId": "test3",
+        "name": "test3",
+        "email": "test3",
+        "imageUrl": "/images/StudentX.png",
+        "id": 1013
+      },
+      {
+        "id": "test4",
+        "name": "test4",
+        "email": "test4",
+        "imageUrl": "Student2.png"
+      }
+    ],
+    "teachers": [
+      {
+        "id": 7001,
+        "name": "Jenni Pulli",
+        "email": "jenni.pulli@westcoast.edu",
+        "courses": [
+          {
+            "id": 302,
+            "name": "Cloud Computing"
+          },
+          {
+            "id": 303,
+            "name": "Cybersecurity Fundamentals"
+          },
+          {
+            "id": 305,
+            "name": "Web Development Fundamentals"
+          }
+        ],
+        "imageUrl": "TeacherWoman.jpg"
+      },
+      {
+        "id": 7002,
+        "name": "Sara Simeone",
+        "email": "sara.simeone@westcoast.edu",
+        "courses": [
+          {
+            "id": 306,
+            "name": "Digital Marketing"
+          },
+          {
+            "id": 304,
+            "name": "Product Management"
+          }
+        ],
+        "imageUrl": "TeacherWoman2.jpg"
+      },
+      {
+        "id": 7003,
+        "name": "Michael Gustavsson",
+        "email": "michael.gustavsson@westcoast.edu",
+        "courses": [
+          {
+            "id": 301,
+            "name": "Blockchain Development"
+          },
+          {
+            "id": 341,
+            "name": "Cybersecurity Fundamentals | Remote"
+          }
+        ],
+        "imageUrl": "TeacherMan.jpg"
+      },
+      {
+        "id": 7004,
+        "name": "Crispin Grijander",
+        "email": "crispin.grijander@westcoast.edu",
+        "courses": [
+          {
+            "id": 342,
+            "name": "Test Automation | Remote"
+          },
+          {
+            "id": 343,
+            "name": "IT Automation | Remote"
+          }
+        ],
+        "imageUrl": "CrispinGrijander.png"
+      },
+      {
+        "id": "7777",
+        "name": "Test",
+        "courses.id": "301",
+        "imageUrl": "Test",
+        "email": "Test@test.com"
+      }
+    ]
+  }
