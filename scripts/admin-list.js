@@ -101,11 +101,11 @@ const selectedCourse = (e) => {
         console.log(courseId);
         return courseId;
        
-    } else if (e.target.localName === 'span') {
-        courseId = e.target.parentElement.getAttribute('courseid');
-        console.log(courseId);
-        return courseId;
-    } else if (e.target.localName === 'button') {
+    // } else if (e.target.localName === 'span') {
+    //     courseId = e.target.parentElement.getAttribute('courseid');
+    //     console.log(courseId);
+    //     return courseId;
+    // } else if (e.target.localName === 'button') {
         courseId = e.target.parentElement.getAttribute('courseid');
         // return courseId;
     
@@ -168,11 +168,11 @@ const listAllTeachers = async () => {
 //     const course = await http.get();
 // }
 
-// const deleteCourse = async () => {
-//     // e.preventDefault(); // Prevent the form from submitting
-//     const url = `http://localhost:3000/courses/${id}`;
-//     const http = new HttpClient(url);
-//     await http.delete();
+const deleteCourse = async () => {
+    // e.preventDefault(); // Prevent the form from submitting
+    const url = `http://localhost:3000/courses/${id}`;
+    const http = new HttpClient(url);
+    await http.delete();
 
 //     // Add an alert
 //     // alert('The course has been deleted');
@@ -182,6 +182,6 @@ const listAllTeachers = async () => {
 // Get ready these functions when the document is ready
 
 document.addEventListener('DOMContentLoaded', initPage);
-
+form.addEventListener('submit', updateCourse);
 // This function must be add on edit-course.html
-// deleteButton.addEventListener('click', deleteCourse);
+deleteButton.addEventListener('click', deleteCourse);

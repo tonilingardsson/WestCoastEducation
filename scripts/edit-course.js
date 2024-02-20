@@ -1,7 +1,7 @@
 import HttpClient from "./http.js";
+import { convertFormDataToJson } from "./utilities.js";
 // import { convertFormDataToJson } from "./utilities.js";
 const form = document.querySelector('updateCourseForm');
-
 // One delete button for all forms
 const deleteButton = document.querySelector('#delete');
 
