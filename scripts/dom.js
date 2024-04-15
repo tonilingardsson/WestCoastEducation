@@ -85,8 +85,10 @@ const createCourseList = (courses, element) => {
         // container.appendChild(createSpan(course.averageRating));
         container.appendChild(createSpan(course.imageUrl));
         element.appendChild(container);
-        const button = deleteCourse(courses.id);
-        button.addEventListener('click', deleteCourse);
+        const button = editCourse(courses.id);
+        button.setAttribute('id', course.id);
+
+        button.addEventListener('click', editCourse);
         // button.appendChild(createDeleteButton(course.id));
         container.appendChild(button);
     });
@@ -122,9 +124,9 @@ const addImageClickHandler = (images) => {
     // window.location.href = `course.html?id=${id}`;
 };
 
-const deleteCourse = (id) => {
+const editCourse = (id) => {
     const button = document.createElement('button');
-    button.classList.add('delete-button');
+    button.classList.add('edit-button');
     button.setAttribute('id', id);
     button.textContent = 'Edit';
     return button;

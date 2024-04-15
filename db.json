@@ -81,74 +81,66 @@
       "url": "test-automation-remote"
     },
     {
-      "courseId": "",
-      "courseName": "",
-      "courseDuration": "",
+      "id": "345",
+      "name": "",
+      "duration": "",
       "teacherId": "",
-      "courseAverageRating": "",
+      "averageRating": "",
       "imageUrl": "",
-      "url": "",
-      "id": 345
+      "url": ""
     },
     {
-      "courseId": "1",
-      "courseName": "1",
-      "courseDuration": "1",
+      "id": "346",
+      "name": "1",
+      "duration": "1",
       "teacherId": "1",
-      "courseAverageRating": "1",
+      "averageRating": "1",
       "imageUrl": "1",
-      "url": "1",
-      "id": 346
+      "url": "1"
+
     },
     {
-      "courseId": "Michael",
-      "courseName": "Det",
-      "courseDuration": "Funkar",
+      "id": "347",
+      "name": "Det",
+      "duration": "Funkar",
       "teacherId": "Att",
-      "courseAverageRating": "Spara",
+      "averageRating": "Spara",
       "imageUrl": "Något",
-      "url": "oleole",
-      "id": 347
+      "url": "oleole"
     },
     {
-      "courseId": "Test",
-      "courseName": "TestName",
-      "courseDuration": "Test",
+      "id": "348",
+      "name": "TestName",
+      "duration": "Test",
       "teacherId": "Test",
-      "courseAverageRating": "test",
+      "averageRating": "test",
       "imageUrl": "test",
-      "url": "test",
-      "id": 348
-    },
+      "url": "test"    },
     {
-      "courseId": "TestID",
-      "courseName": "TestName",
-      "courseDuration": "testDuration",
+      "id": "349",
+      "name": "TestName",
+      "duration": "testDuration",
       "teacherId": "testTeacher",
-      "courseAverageRating": "testRate",
+      "averageRating": "testRate",
       "imageUrl": "test.jpg",
-      "url": "test",
-      "id": 349
-    },
+      "url": "test"    },
     {
-      "courseId": "TTTTT",
-      "courseName": "TTTTT",
-      "courseDuration": "TTTT",
+      "id": "350",
+      "name": "TTTTT",
+      "duration": "TTTT",
       "teacherId": "TTT",
-      "courseAverageRating": "TTT",
+      "averageRating": "TTT",
       "imageUrl": "TTT",
       "url": "ttt",
-      "id": 350
     },
     {
-      "courseId": "Testa",
-      "courseName": "Testa",
-      "courseDuration": "testa",
+      "id": "351",
+      "name": "Testa",
+      "duration": "testa",
       "teacherId": "testa",
-      "courseAverageRating": "testa",
+      "averageRating": "testa",
       "imageUrl": "testa",
-      "url": "testa",
-      "id": 351
+      "url": "testa"
     }
   ],
   "students": [

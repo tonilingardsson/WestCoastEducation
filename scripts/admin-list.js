@@ -6,8 +6,9 @@ import { createCard, createCardS, createCardT, addImageClickHandler, createCours
 const coursesGallery = document.querySelector('#courses-gallery');
 const studentsGallery = document.querySelector('#students-gallery');
 const teachersGallery = document.querySelector('#teachers-gallery');
-const deleteButton = document.querySelector('#delete');
-
+// const deleteButton = document.querySelector('#delete');
+const editButton = document.querySelectorAll('.edit-button'); // Now is class="delete-button"
+console.log(editButton);
 // async function initPage() {
 //     // Load data
 //     const courses = await listAllCourses();
@@ -15,7 +16,6 @@ const deleteButton = document.querySelector('#delete');
 //     courses.forEach((course) => {
 //         // Add courses to page
 //         coursesGallery.appendChild(createCard(course));
-
 //         // Add a delete button
 //         const button = document.createElement('button');
 //         button.classList.add('delete-button');
@@ -96,24 +96,22 @@ const initPage = async () => {
 
 const selectedCourse = (e) => {
     let courseId;
+    console.log(e.target.localName);
     if (e.target.localName === 'div') {
         courseId = e.target.getAttribute('courseid');
-        console.log(courseId);
+        console.log(e.target.localName);
         return courseId;
-       
-    // } else if (e.target.localName === 'span') {
-    //     courseId = e.target.parentElement.getAttribute('courseid');
-    //     console.log(courseId);
-    //     return courseId;
-    // } else if (e.target.localName === 'button') {
+    } else if (e.target.localName === 'span') {
         courseId = e.target.parentElement.getAttribute('courseid');
-        // return courseId;
-    
+        return courseId;
+    } else if (e.target.localName === 'button') {
+        courseId = e.target.parentElement.getAttribute('courseid');
+        return courseId;
     }
 
     // Redirect to edit-course.html
     location.href = `./edit-course.html?id=${courseId}`;
-    console.log(e.target.localName);
+    console.log(e.target.className);
 };
 
 const listAllStudents = async () => {
@@ -173,7 +171,7 @@ const deleteCourse = async () => {
     const url = `http://localhost:3000/courses/${id}`;
     const http = new HttpClient(url);
     await http.delete();
-
+}
 //     // Add an alert
 //     // alert('The course has been deleted');
 //     // Redirect to courses.html
@@ -182,6 +180,7 @@ const deleteCourse = async () => {
 // Get ready these functions when the document is ready
 
 document.addEventListener('DOMContentLoaded', initPage);
-form.addEventListener('submit', updateCourse);
+editButton.addEventListener('submit', selectedCourse);
 // This function must be add on edit-course.html
-deleteButton.addEventListener('click', deleteCourse);
+// deleteButton.addEventListener('click', deleteCourse);
+
