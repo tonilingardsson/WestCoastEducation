@@ -81,66 +81,14 @@
       "url": "test-automation-remote"
     },
     {
-      "id": "345",
-      "name": "",
-      "duration": "",
+      "courseId": "",
+      "courseName": "Test Course",
+      "courseDuration": "",
       "teacherId": "",
-      "averageRating": "",
+      "courseAverageRating": "",
       "imageUrl": "",
-      "url": ""
-    },
-    {
-      "id": "346",
-      "name": "1",
-      "duration": "1",
-      "teacherId": "1",
-      "averageRating": "1",
-      "imageUrl": "1",
-      "url": "1"
-
-    },
-    {
-      "id": "347",
-      "name": "Det",
-      "duration": "Funkar",
-      "teacherId": "Att",
-      "averageRating": "Spara",
-      "imageUrl": "Något",
-      "url": "oleole"
-    },
-    {
-      "id": "348",
-      "name": "TestName",
-      "duration": "Test",
-      "teacherId": "Test",
-      "averageRating": "test",
-      "imageUrl": "test",
-      "url": "test"    },
-    {
-      "id": "349",
-      "name": "TestName",
-      "duration": "testDuration",
-      "teacherId": "testTeacher",
-      "averageRating": "testRate",
-      "imageUrl": "test.jpg",
-      "url": "test"    },
-    {
-      "id": "350",
-      "name": "TTTTT",
-      "duration": "TTTT",
-      "teacherId": "TTT",
-      "averageRating": "TTT",
-      "imageUrl": "TTT",
-      "url": "ttt",
-    },
-    {
-      "id": "351",
-      "name": "Testa",
-      "duration": "testa",
-      "teacherId": "testa",
-      "averageRating": "testa",
-      "imageUrl": "testa",
-      "url": "testa"
+      "url": "",
+      "id": 345
     }
   ],
   "students": [
@@ -179,6 +127,18 @@
       "name": "test4",
       "email": "test4",
       "imageUrl": "Student2.png"
+    },
+    {
+      "id": 1234,
+      "name": "xxx",
+      "email": "xx@xx,xx",
+      "imageUrl": ""
+    },
+    {
+      "id": 1235,
+      "name": "zzzz",
+      "email": "zz@zz.zz",
+      "imageUrl": ""
     }
   ],
   "teachers": [
@@ -251,11 +211,11 @@
       "imageUrl": "CrispinGrijander.png"
     },
     {
-      "id": "7777",
-      "name": "Test",
-      "courses.id": "301",
-      "imageUrl": "Test",
-      "email": "Test@test.com"
+      "id": 7005,
+      "name": "QQqqq",
+      "courses.id": "342",
+      "imageUrl": "",
+      "email": "qq@qq.qq"
     }
   ]
 }
