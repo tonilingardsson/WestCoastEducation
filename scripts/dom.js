@@ -2,12 +2,15 @@
 // DOM Manipulation
 /*******************************************************************************/
 const createCard = (course) => {
-    console.log(course);
     const div = document.createElement('div');
-    div.classList.add('course-image', 'img');
+    div.classList.add('course-container');
     div.appendChild(createImage(course.imageUrl, course.id));
     div.appendChild(createCourseInfo(course));
     div.appendChild(createCourseInfo2(course));
+
+    const p = document.createElement('p');
+    p.innerHTML = `<a href="/pages/info.html?id=${course.id}">More info</a>`;
+    div.appendChild(p);
 
     return div;
 }
@@ -34,11 +37,8 @@ const createCardT = (teacher) => {
 }
 
 const createImage = (imageUrl, id) => {
-    // console.log(imageUrl);
-    // We save the image in a variable called image
     const image = document.createElement('img');
-    // Set the source of the image. 
-    // If CHANGE the position of the image files, EDIT the source here.
+    image.classList.add('course-image', 'img');
     image.setAttribute('src', `/images/${imageUrl}`);
     // Set the data-id of the image
     image.setAttribute('id', id);
@@ -49,7 +49,7 @@ const createImage = (imageUrl, id) => {
 const createCourseInfo = (course) => {
     const paragraph = document.createElement('p');
     paragraph.appendChild(document.createTextNode(`${course.name} - ${course.duration} - Rating: ${course.averageRating}/5`));
-     // courseInfo.classList.add('course-info');
+    // courseInfo.classList.add('course-info');
     return paragraph;
 };
 
@@ -57,7 +57,7 @@ const createCourseInfo2 = (course) => {
     const paragraph = document.createElement('p');
     paragraph.appendChild(document.createTextNode(`${course.description}`));
     return paragraph;
-    
+
 }
 
 const createStudentInfo = (student) => {
@@ -111,11 +111,11 @@ const addImageClickHandler = (images) => {
         // to get the id of the all images: courses, students, and teachers.
         const courseId = image.getAttribute('id');
         const url = `http://localhost:5500/courses/${courseId}.html`
-//   console.log(courseId, url);
+        //   console.log(courseId, url);
         image.addEventListener('click', () => {
             // Redirect to the specific url
             location.href = `./courses/${courseId}.html`;
-          
+
             // alert(`This couse has this id: ${courseId} and the picture's source is: ${src} - `);
         });
     });
