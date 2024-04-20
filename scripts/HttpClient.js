@@ -1,9 +1,7 @@
-import config from "../lib/util/config.js";
-
 export default class HttpClient {
     #url = "";
-    constructor() {
-        this.#url = config.api.baseURL;
+    constructor(url) {
+        this.#url = url;
     }
 
     async get(resource, id = '') {
