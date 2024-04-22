@@ -94,7 +94,8 @@
   "students": [
     {
       "id": 1001,
-      "email": "leticia.student@gmail.com",
+      "name": "Rowel Malmström",
+      "email": "rowel.malmstrom@gmail.com",
       "courses": [
         {
           "id": 302,
@@ -113,7 +114,8 @@
     },
     {
       "id": 1002,
-      "email": "leticia.student@gmail.com",
+      "name": "Hedi Gardi",
+      "email": "Hedi.gardi@gmail.com",
       "courses": [
         {
           "id": 302,
@@ -132,7 +134,8 @@
     },
     {
       "id": 1003,
-      "email": "leticia.student@gmail.com",
+      "name": "Toni Luna",
+      "email": "toni.luna@gmail.com",
       "courses": [
         {
           "id": 302,
@@ -218,13 +221,6 @@
         }
       ],
       "imageUrl": "CrispinGrijander.png"
-    },
-    {
-      "id": 7005,
-      "name": "QQqqq",
-      "courses.id": "342",
-      "imageUrl": "",
-      "email": "qq@qq.qq"
     }
   ]
 }
