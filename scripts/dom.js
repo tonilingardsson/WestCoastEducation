@@ -111,17 +111,13 @@ const addImageClickHandler = (images) => {
         // to get the id of the all images: courses, students, and teachers.
         const courseId = image.getAttribute('id');
         const url = `http://localhost:5500/courses/${courseId}.html`
-        //   console.log(courseId, url);
         image.addEventListener('click', () => {
-            // Redirect to the specific url
             location.href = `./courses/${courseId}.html`;
 
             // alert(`This couse has this id: ${courseId} and the picture's source is: ${src} - `);
         });
     });
-    // const image = event.target;
-    // const id = image.getAttribute('id');
-    // window.location.href = `course.html?id=${id}`;
+
 };
 
 const editCourse = (id) => {
@@ -132,8 +128,4 @@ const editCourse = (id) => {
     return button;
 }
 
-
-
-// Export the functions to be used in other files
-// This export type is called "named export"
 export { createCard, createCardS, createCardT, addImageClickHandler, createCourseList };
