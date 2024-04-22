@@ -1,7 +1,7 @@
 /*******************************************************************************/
 // DOM Manipulation
 /*******************************************************************************/
-export const createCourseCard = (course) => {
+export const createCourseCard = (course, type = 'info') => {
     const container = document.createElement('div');
     container.classList.add('course-container');
     container.appendChild(createImage(course.imageUrl, course.id));
@@ -14,9 +14,20 @@ export const createCourseCard = (course) => {
     description.appendChild(document.createTextNode(`${course.description}`));
     container.appendChild(description);
 
-    const moreInfo = document.createElement('p');
-    moreInfo.innerHTML = `<a href="/pages/info.html?id=${course.id}">More info</a>`;
-    container.appendChild(moreInfo);
+    const wrapper = document.createElement('div');
+
+    switch (type) {
+        case 'info':
+            wrapper.innerHTML = `<a href="/pages/info.html?id=${course.id}">More info</a>`;
+            break;
+        case 'enroll':
+            wrapper.innerHTML = `<button id="enrollCourse">Apply</button><span id="message"></span>`;
+            break;
+
+        default:
+            break;
+    }
+    container.appendChild(wrapper);
 
     return container;
 }
