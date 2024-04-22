@@ -1,18 +1,24 @@
 /*******************************************************************************/
 // DOM Manipulation
 /*******************************************************************************/
-const createCard = (course) => {
-    const div = document.createElement('div');
-    div.classList.add('course-container');
-    div.appendChild(createImage(course.imageUrl, course.id));
-    div.appendChild(createCourseInfo(course));
-    div.appendChild(createCourseInfo2(course));
+export const createCourseCard = (course) => {
+    const container = document.createElement('div');
+    container.classList.add('course-container');
+    container.appendChild(createImage(course.imageUrl, course.id));
 
-    const p = document.createElement('p');
-    p.innerHTML = `<a href="/pages/info.html?id=${course.id}">More info</a>`;
-    div.appendChild(p);
+    const details = document.createElement('p');
+    details.appendChild(document.createTextNode(`${course.name} - ${course.duration} - Rating: ${course.averageRating}/5`));
+    container.appendChild(details);
 
-    return div;
+    const description = document.createElement('p');
+    description.appendChild(document.createTextNode(`${course.description}`));
+    container.appendChild(description);
+
+    const moreInfo = document.createElement('p');
+    moreInfo.innerHTML = `<a href="/pages/info.html?id=${course.id}">More info</a>`;
+    container.appendChild(moreInfo);
+
+    return container;
 }
 
 const createCardS = (student) => {
@@ -128,4 +134,4 @@ const editCourse = (id) => {
     return button;
 }
 
-export { createCard, createCardS, createCardT, addImageClickHandler, createCourseList };
+export { createCardS, createCardT, addImageClickHandler, createCourseList };
