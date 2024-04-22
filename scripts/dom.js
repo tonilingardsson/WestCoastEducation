@@ -71,20 +71,17 @@ const createImage = (imageUrl, id) => {
 
 
 
-const createCourseList = (courses, element) => {
+export const createCourseList = (courses, element) => {
     courses.forEach((course) => {
         const container = createDiv();
         container.setAttribute('courseid', course.id);
         container.appendChild(createSpan(course.name));
-        // container.appendChild(createSpan(course.duration));
-        // container.appendChild(createSpan(course.averageRating));
         container.appendChild(createSpan(course.imageUrl));
         element.appendChild(container);
         const button = editCourse(courses.id);
         button.setAttribute('id', course.id);
 
         button.addEventListener('click', editCourse);
-        // button.appendChild(createDeleteButton(course.id));
         container.appendChild(button);
     });
 };
@@ -99,22 +96,6 @@ const createSpan = (text) => {
     return span;
 }
 
-const addImageClickHandler = (images) => {
-    images.forEach((image) => {
-        const src = image.getAttribute('src');
-        // Here it used id, so I need to call "id" 
-        // to get the id of the all images: courses, students, and persons.
-        const courseId = image.getAttribute('id');
-        const url = `http://localhost:5500/courses/${courseId}.html`
-        image.addEventListener('click', () => {
-            location.href = `./courses/${courseId}.html`;
-
-            // alert(`This couse has this id: ${courseId} and the picture's source is: ${src} - `);
-        });
-    });
-
-};
-
 const editCourse = (id) => {
     const button = document.createElement('button');
     button.classList.add('edit-button');
@@ -122,5 +103,3 @@ const editCourse = (id) => {
     button.textContent = 'Edit';
     return button;
 }
-
-export { addImageClickHandler, createCourseList };

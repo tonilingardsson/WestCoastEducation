@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Admin - Edit Course | West Coast Cars</title>
+    <meta
+      name="description"
+      content="Edit Course admin panel for West Coast Education"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../scripts/edit-course.js" async defer></script>
+    <script type="module" src="../lib/components/adminHeader.js" defer></script>
+    <script type="module" src="../lib/components/footer.js" defer></script>
+  </head>
+  <body class="grid-container">
+    <header id="header"></header>
+    <main>
+      <section class="container">
+        <h1 class="page-title">Update course</h1>
+
+        <form id="updateStudentForm">
+          <!-- <div class="form-control">
+            <label for="studentId">Course ID</label>
+            <input
+              type="text"
+              name="studentId"
+              id="studentId"
+              placeholder="Assign course ID"
+            />
+          </div> -->
+          <div class="form-control">
+            <label for="courseName">course name</label>
+            <input
+              type="text"
+              name="courseName"
+              id="courseName"
+              placeholder="Type course name"
+            />
+          </div>
+          <div class="form-control">
+            <label for="courseDesc">Course description</label>
+            <input
+              type="text"
+              name="courseDesc"
+              id="courseDesc"
+              placeholder="Write a description"
+            />
+          </div>
+          <div class="form-control">
+            <label for="duration">Duration</label>
+            <input
+              type="text"
+              name="duration"
+              id="duration"
+              placeholder="Write number of weeks"
+            />
+          </div>
+          <div class="form-control">
+            <label for="teacherId">Teacher Id</label>
+            <input
+              type="text"
+              name="teacherId"
+              id="teacherId"
+              placeholder="Assign teacher id"
+            />
+          </div>
+          <div class="form-control">
+            <label for="averageRate">Average rate</label>
+            <input
+              type="text"
+              name="averageRate"
+              id="averageRate"
+              placeholder="Write its average rate"
+            />
+          </div>
+          <div class="form-control">
+            <label for="imageUrl">Photo URL</label>
+            <input
+              type="text"
+              name="imageUrl"
+              id="imageUrl"
+              src=""
+              placeholder="Type: /images/StudentX.png"
+            />
+            <button type="search" class="btn" for="search">Search</button>
+          </div>
+          <div class="form-control">
+            <label for="email">Email</label>
+            <textarea
+              name="email"
+              id="email"
+              placeholder="Type email"
+            ></textarea>
+          </div>
+          <div class="form-control">
+            <div class="btn-container">
+              <button type="submit" for="submit" class="btn">
+                Save changes</button
+              ><button id="delete" for="delete" class="btn btn-danger">
+                DELETE
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer id="footer"></footer>
+  </body>
+</html>

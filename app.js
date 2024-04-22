@@ -1,5 +1,4 @@
-import { getAllCourses, getCourseById } from './lib/services/coursesServices.js'
-import { getAllTeachers } from './lib/services/teachersServices.js';
+import { getAllCourses } from './lib/services/coursesServices.js'
 import { createCourseCard } from './scripts/dom.js';
 const courseContainer = document.querySelector('#courses-gallery');
 
@@ -10,13 +9,6 @@ const initApp = async () => {
     courses.forEach(course => {
         courseContainer.appendChild(createCourseCard(course));
     });
-
-    // const teachers = await getAllTeachers();
-
-    // courses.forEach(teacher => {
-    //     teacherContainer.appendChild(createCourseCard(teacher));
-    // });
-
 
 }
 

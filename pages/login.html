@@ -7,19 +7,25 @@
     <link rel="stylesheet" href="../style.css" />
     <script type="module" src="../lib/components/header.js" defer></script>
     <script type="module" src="../lib/components/footer.js" defer></script>
+    <script type="module" src="../lib/func/login.js" defer></script>
   </head>
   <body>
     <header id="header"></header>
     <h1>Login</h1>
     <form id="login" class="login">
       <label for="username">Username:</label>
-      <input id="username" type="text" placeholder="Username" required />
+      <input
+        id="username"
+        type="email"
+        placeholder="student@email.com"
+        required
+      />
       <label for="password">Password:</label>
-      <input id="password" type="password" placeholder="Password" required />
-      <button id="loginBtn" onclick="simulateLogin()">Submit</button>
+      <input id="password" type="password" placeholder="Password" />
+      <button>Submit</button>
     </form>
     <p id="message"></p>
     <footer id="footer"></footer>
-    <script type="module" src="../app.js" defer></script>
+    <!-- <script type="module" src="../app.js" defer></script> -->
   </body>
 </html>
