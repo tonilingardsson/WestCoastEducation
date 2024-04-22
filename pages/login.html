@@ -1,46 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login or Register | West Coast Education</title>
-  <link rel="stylesheet" href="../style.css">
-</head>
-<body>
-    <header>
-        <nav class="light-mode">
-      <ul>
-        <li><a href="../index.html"><img class="minilogo" src="../images/minilogo.png" alt="Wescoast Education logo"></a></li>
-        <li><a href="/pages/courses.html">Courses</a></li>
-        <li><a href="/pages/teachers.html">Teachers</a></li>
-        <li><a href="#"><!-- Gap to give space to login and admin button --></a></li>
-        <li><a href="#">Login</a></li>
-        <li><a href="/admin/index.html">Admin</a></li>
-        
-        
-        <!-- Add the theme toggle button here -->
-        <!-- <li><button id="theme-toggle-btn">Toggle Mode</button></li> -->
-      </ul>
-    </nav>
-      </header>
-  <h1>Login</h1>
-  <form id="login" class="login">
-    <label for="username">Username:</label>
-    <input id="username" type="text" placeholder="Username" required>
-    <label for="password">Password:</label>
-    <input id="password" type="password" placeholder="Password" required>
-    <button id="loginBtn" onclick="simulateLogin()">Submit</button>
-  </form>
-  <p id="message"></p>
-  <footer>
-    <ul>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms of Use</a></li>
-    </ul>
-        <p>&copy; 2024 West Coast Education. All rights reserved.</p>
-    </footer>
-  <script type="module" src="../app.js" defer></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login or Register | West Coast Education</title>
+    <link rel="stylesheet" href="../style.css" />
+    <script type="module" src="../lib/components/header.js" defer></script>
+    <script type="module" src="../lib/components/footer.js" defer></script>
+  </head>
+  <body>
+    <header id="header"></header>
+    <h1>Login</h1>
+    <form id="login" class="login">
+      <label for="username">Username:</label>
+      <input id="username" type="text" placeholder="Username" required />
+      <label for="password">Password:</label>
+      <input id="password" type="password" placeholder="Password" required />
+      <button id="loginBtn" onclick="simulateLogin()">Submit</button>
+    </form>
+    <p id="message"></p>
+    <footer id="footer"></footer>
+    <script type="module" src="../app.js" defer></script>
+  </body>
 </html>

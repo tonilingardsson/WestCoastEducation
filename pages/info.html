@@ -11,30 +11,12 @@
     />
     <!-- <script type="text/javascript" src="./data/courses.js" defer></script>
     <script type="text/javascript" src="./data/teachers.js" defer></script -->
-    <script src="../app.js" type="module" defer></script>
+    <script src="../lib/components/header.js" type="module" defer></script>
+    <script src="../lib/components/footer.js" type="module" defer></script>
+    <script src="../lib/func/info.js" type="module" defer></script>
   </head>
   <body class="">
-    <header>
-      <nav class="">
-        <ul>
-          <li>
-            <a href="../index.html"
-              ><img
-                class="minilogo"
-                src="../images/minilogo.png"
-                alt="Wescoast Education logo"
-            /></a>
-          </li>
-          <li><a href="/pages/courses.html">Courses</a></li>
-          <li><a href="/pages/teachers.html">Teachers</a></li>
-          <li>
-            <a href="#"><!-- Gap to give space to login and admin button --></a>
-          </li>
-          <li><a href="/pages/login.html">Login</a></li>
-          <li><a href="/admin/index.html">Admin</a></li>
-        </ul>
-      </nav>
-    </header>
+    <header id="header"></header>
 
     <main>
       <section
@@ -42,14 +24,6 @@
         class="courses-gallery light-mode"
       ></section>
     </main>
-    <footer>
-      <ul>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms of Use</a></li>
-      </ul>
-      <p>&copy; 2024 West Coast Education. All rights reserved.</p>
-    </footer>
+    <footer id="footer"></footer>
   </body>
 </html>

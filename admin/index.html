@@ -4,97 +4,36 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Admin | West Coast Education</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../style.css">
-    </head>
-    <body>
-        <h1>Administration</h1>
-        <header>
-          <nav class="admin-menu">
-            <ul class="admin-menu">
-              <li>
-                <a href="../index.html"
-                  ><img
-                    class="minilogo"
-                    src="../images/minilogo.png"
-                    alt="Wescoast Education logo"
-                /></a>
-              </li>
-              <li class="menu-item">
-                <a href="/admin/index.html" title="Admin panel">Admin panel</a>
-              </li>
-              <li class="menu-item">
-                <a
-                  href="/admin/communication.html"
-                  title="Communicate with teachers and students via chat or email"
-                  >Communication</a
-                >
-              </li>
-            </ul>
-            <ul class="add-menu" id="add-menu">
-              <li class="menu-item">
-                <a href="/admin/add-course.html" title="Add courses">Add courses</a>
-              </li>
-              <li class="menu-item">
-                <a href="/admin/add-student.html" title="Add or delete students"
-                  >Add students</a
-                >
-              </li>
-              <li class="menu-item">
-                <a href="/admin/add-teacher.html" title="Add teachers"
-                  >Add teachers</a
-                >
-              </li>
-            </ul>
-            <ul class="edit-menu" id="edit-menu">
-              <li class="menu-item">
-                <a href="/admin/edit-course.html" title="Edit or delete courses"
-                  >Manage courses</a
-                >
-              </li>
-              <li class="menu-item">
-                <a href="/admin/edit-student.html" title="Edit students"
-                  >Manage students</a
-                >
-              </li>
-              <li class="menu-item">
-                <a href="/admin/edit-teacher.html" title="Edit teachers"
-                  >Manage teachers</a
-                >
-              </li>
-            </ul>
-          </nav>
-          </header>
-          <main>
-            <div class="admin-container">
-            <section
-              id="courses-gallery"
-              class="courses-gallery light-mode"
-            ></section>
-            <section
-              id="teachers-gallery"
-              class="teachers-gallery light-mode"
-            ></section>
-            <section
-              id="students-gallery"
-              class="students-gallery light-mode"
-            ></section>
-          </div>
-          </main>
-          <footer>
-            <ul>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Use</a></li>
-            </ul>
-                <p>&copy; 2024 West Coast Education. All rights reserved.</p>
-            </footer>
-        <script type="module" src="../scripts/admin-list.js" defer></script>
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Admin | West Coast Education</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../lib/components/adminHeader.js" type="module" defer></script>
+    <script src="../lib/components/footer.js" type="module" defer></script>
+    <script type="module" src="../scripts/admin-list.js" defer></script>
+  </head>
+  <body>
+    <h1>Administration</h1>
+    <header id="header"></header>
+    <main>
+      <div class="admin-container">
+        <section
+          id="courses-gallery"
+          class="courses-gallery light-mode"
+        ></section>
+        <section
+          id="teachers-gallery"
+          class="teachers-gallery light-mode"
+        ></section>
+        <section
+          id="students-gallery"
+          class="students-gallery light-mode"
+        ></section>
+      </div>
+    </main>
+    <footer id="footer"></footer>
+  </body>
 </html>

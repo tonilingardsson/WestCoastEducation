@@ -1,48 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studenter | West Coast Education | Utbildningsföretag sedan 1984 </title>
-    <link rel="stylesheet" href="../style.css" id="theme-style">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Studenter | West Coast Education | Utbildningsföretag sedan 1984
+    </title>
+    <link rel="stylesheet" href="../style.css" id="theme-style" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- <script type="text/javascript" src="./data/students.js" ></script> -->
-    <script type="module" src="../app.js"  defer></script>
-</head>
+    <script type="module" src="../lib/components/header.js" defer></script>
+    <script type="module" src="../lib/components/footer.js" defer></script>
+    <script type="module" src="../app.js" defer></script>
+  </head>
 
-<body class="light-mode">
-    <header>
-        <nav class="">
-            <ul>
-              <li><a href="../index.html"><img class="minilogo" src="../images/minilogo.png" alt="Wescoast Education logo"></a></li>
-      
-              <li><a href="#">Home</a></li>
-              <li><a href="/pages/courses.html">Courses</a></li>
-              <li><a href="/pages/teachers.html">Teachers</a></li>
-              <li><a href="#"><!-- Gap to give space to login and admin button --></a></li>
-              <li><a href="/pages/login.html">Login</a></li>
-              <li><a href="/admin/index.html">Admin</a></li>
-            </ul>
-          </nav></header>
+  <body class="light-mode">
+    <header id="header"></header>
     <h1>West Coast Education</h1>
-    <h2>IT School since 1984 </h2>
+    <h2>IT School since 1984</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     <main>
-        <section id="students-gallery" class="students-gallery light-mode">
-            <div id="students-list"></div>
-        </section>
-
+      <section id="students-gallery" class="students-gallery light-mode">
+        <div id="students-list"></div>
+      </section>
     </main>
-        <footer>
-            <ul>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Use</a></li>
-            </ul>
-            <p>&copy; 2024 West Coast Education. All rights reserved.</p>
-        </footer>
-</body>
-
+    <footer id="footer"></footer>
+  </body>
 </html>
