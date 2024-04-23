@@ -25,12 +25,12 @@
       <section class="add-course container">
         <h1 class="page-title">Add course</h1>
 
-        <form id="addCourseForm">
+        <form id="courseForm">
           <div class="form-control">
             <label for="courseName">Course name</label>
             <input
               type="text"
-              name="courseName"
+              name="name"
               id="courseName"
               placeholder="Type course name"
             />
@@ -39,7 +39,7 @@
             <label for="courseDesc">Course description</label>
             <input
               type="text"
-              name="courseDesc"
+              name="description"
               id="courseDesc"
               placeholder="Write a description"
             />
@@ -66,7 +66,7 @@
             <label for="averageRate">Average rate</label>
             <input
               type="text"
-              name="averageRate"
+              name="averageRating"
               id="averageRate"
               placeholder="Write its average rate"
             />
@@ -84,10 +84,9 @@
           </div>
           <div class="form-control">
             <div class="btn-container">
-              <button type="submit" for="submit" class="btn">
-                Save changes</button
-              ><button id="delete" for="delete" class="btn btn-danger">
-                DELETE
+              <button type="submit" for="submit" class="btn">Save</button>
+              <button id="delete" for="delete" class="btn btn-danger">
+                Cancel
               </button>
             </div>
           </div>
