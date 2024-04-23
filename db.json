@@ -79,51 +79,6 @@
       "averageRating": 4.5,
       "imageUrl": "IT AutomationX.jpg",
       "url": "test-automation-remote"
-    },
-    {
-      "courseName": "New",
-      "courseDesc": "",
-      "duration": "",
-      "teacherId": "",
-      "averageRate": "",
-      "imageUrl": "",
-      "id": 345
-    },
-    {
-      "courseName": "New",
-      "courseDesc": "New desc",
-      "duration": "",
-      "teacherId": "",
-      "averageRate": "",
-      "imageUrl": "",
-      "id": 346
-    },
-    {
-      "courseName": "Async",
-      "courseDesc": "Await",
-      "duration": "",
-      "teacherId": "",
-      "averageRate": "",
-      "imageUrl": "",
-      "id": 347
-    },
-    {
-      "courseName": "Något",
-      "courseDesc": "",
-      "duration": "",
-      "teacherId": "",
-      "averageRate": "",
-      "imageUrl": "",
-      "id": 348
-    },
-    {
-      "name": "Now?",
-      "courseDesc": "",
-      "duration": "",
-      "teacherId": "",
-      "averageRate": "",
-      "imageUrl": "",
-      "id": 349
     }
   ],
   "students": [
