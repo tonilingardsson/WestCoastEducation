@@ -14,17 +14,18 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../style.css" />
-    <script src="../scripts/edit-course.js" async defer></script>
+    <!-- <script src="../scripts/edit-course.js" async defer></script> -->
     <script type="module" src="../lib/components/adminHeader.js" defer></script>
     <script type="module" src="../lib/components/footer.js" defer></script>
+    <script type="module" src="../lib/func/manageCourses.js" defer></script>
   </head>
   <body class="grid-container">
     <header id="header"></header>
     <main>
-      <section class="container">
-        <h1 class="page-title">Update course</h1>
+      <section class="add-course container">
+        <h1 class="page-title">Add course</h1>
 
-        <form id="updateStudentForm">
+        <form id="addCourseForm">
           <!-- <div class="form-control">
             <label for="studentId">Course ID</label>
             <input
@@ -35,7 +36,7 @@
             />
           </div> -->
           <div class="form-control">
-            <label for="courseName">course name</label>
+            <label for="courseName">Course name</label>
             <input
               type="text"
               name="courseName"
@@ -109,6 +110,7 @@
           </div>
         </form>
       </section>
+      <section id="updateCourseList"></section>
     </main>
     <footer id="footer"></footer>
   </body>

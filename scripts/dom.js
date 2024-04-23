@@ -71,7 +71,7 @@ const createImage = (imageUrl, id) => {
 
 
 
-export const createCourseList = (courses, element) => {
+export const updateCourseList = (courses, element) => {
     courses.forEach((course) => {
         const container = createDiv();
         container.setAttribute('courseid', course.id);

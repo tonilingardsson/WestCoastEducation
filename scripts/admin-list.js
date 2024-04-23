@@ -1,5 +1,5 @@
-import HttpClient from "./http.js";
-import { createCard, createCardS, createCardT, addImageClickHandler, createCourseList } from "./dom.js";
+import HttpClient from "../lib/models/HttpClient.js";
+import { updateCourseList } from "./dom.js";
 
 
 // Global variables. Courses, teachers, and students.
@@ -7,7 +7,7 @@ const coursesGallery = document.querySelector('#courses-gallery');
 const studentsGallery = document.querySelector('#students-gallery');
 const teachersGallery = document.querySelector('#teachers-gallery');
 // const deleteButton = document.querySelector('#delete');
-const editButton = document.querySelectorAll('.edit-button'); // Now is class="delete-button"
+const editButton = document.querySelectorAll('.delete-button'); // Now is class="delete-button"
 console.log(editButton);
 // async function initPage() {
 //     // Load data
@@ -83,9 +83,9 @@ const initPage = async () => {
     const url = 'http://localhost:3000/courses';
     const http = new HttpClient(url);
     const courses = await http.get(url);
-   
+
     // const courses = await http.get();
-    createCourseList(courses, document.querySelector('#courses-gallery'));
+    updateCourseList(courses, document.querySelector('#courses-gallery'));
     const cards = document.querySelectorAll('#courses-gallery div');
 
     // Go through all the elements and add a click event listener
