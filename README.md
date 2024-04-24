@@ -1,4 +1,3 @@
-
 Westcoast Education
 
 Vi har blivit kontaktade av WestCoast Education, som behöver vår hjälp att modernisera plattform. Vi har fått följande information av deras beställare.
@@ -13,10 +12,11 @@ Vårt koncept har och är fortfarande att tillhandahållaklassrums utbildningar 
 Vi märker dessvärre att antalet utbildningar som sker i klassrum minskar drastiskt samt att det har blivit svårare att locka elever till våra distansutbildningar.
 
 Vi kommer nu att göra en stor satsning på att kunna tillhandahålla utbildningar, seminarier och webinarier ”On-Demand”.Vi har beslutat att vi behöver en modern och attraktivplattform att erbjuda våra elever och kunder för:
-+ bokning,
-+ sökning, 
-+ matchning av kurser 
-+ samt samarbete.
+
+- bokning,
+- sökning,
+- matchning av kurser
+- samt samarbete.
 
 ///////////////////////////////////////////////////////////////////////////////////////////
 
@@ -30,28 +30,32 @@ KLASSRUMSKURSER
 Visning och listning av kurser som kommer att köras på dett raditionella viset. Det vill säga i klassrum eller på distans som är lärarledda. Det skall gå att visa detaljer för kurserna som till exempel innehåll, längden på kursen, vem som är lärare samt genomsnittligt betyg som kursen fått av elever.
 
 Detta innebär att vi kommer att behöva kunna
-+ LÄGGA TILL kurser, 
-+ MATCHA lärare till rätt kurs. 
-+ Vi behöver även möjlighet att TA BORT kurser 
-+ samt ändra kursers scheman.
-+ Vi behöver även kunna LÄGGA TILL nya lärare vid behov i systemet.
-+ Vi behöver dessutom även möjlighet att kunna administrera elever i systemet.
-+ Vi vill ha möjlighet att kunna (admin) KOMMUNICERA med elever via E-POST och via CHATT. 
-+ Även LÄRARE behöver möjlighet att kunna KOMMUNICERA med elever via E-POST och CHATT.
+
+- LÄGGA TILL kurser,
+- MATCHA lärare till rätt kurs.
+- Vi behöver även möjlighet att TA BORT kurser
+- samt ändra kursers scheman.
+- Vi behöver även kunna LÄGGA TILL nya lärare vid behov i systemet.
+- Vi behöver dessutom även möjlighet att kunna administrera elever i systemet.
+- Vi vill ha möjlighet att kunna (admin) KOMMUNICERA med elever via E-POST och via CHATT.
+- Även LÄRARE behöver möjlighet att kunna KOMMUNICERA med elever via E-POST och CHATT.
 
 /////// Student (reg-user admin page) /////
 
 Elever skall kunna:
-+ FÖLJA sin STATUS i verktyget och även,
-+ kunna FÅ REKOMMENDATIONER på nästa steg i sin utveckling. Som tillexempel rekommendationer på andra kurser som andra valt somhar gått samma utbildningsspår.
+
+- FÖLJA sin STATUS i verktyget och även,
+- kunna FÅ REKOMMENDATIONER på nästa steg i sin utveckling. Som tillexempel rekommendationer på andra kurser som andra valt somhar gått samma utbildningsspår.
 
 För varje kurs så skall det:
-+ finnas möjlighet för elever att kunna STÄLLA FRÅGOR till sin lärare VIA verktyget.
+
+- finnas möjlighet för elever att kunna STÄLLA FRÅGOR till sin lärare VIA verktyget.
 
 ///////////////////////////////////////////////////////////////////////////////////////////
 
 BOKNING AV KLASSRUMSKURSER
-+ För att kunna boka en kurs via verktyget måste man ha ett användarkonto. Så ett sätt för att REGISTRERA sig och LOGGA-IN måste skapas.
+
+- För att kunna boka en kurs via verktyget måste man ha ett användarkonto. Så ett sätt för att REGISTRERA sig och LOGGA-IN måste skapas.
 
 När en elev har bokat en kurs så behöver vi kunna skicka ettbekräftelsemejl med betalningsuppgifter och ettvälkomstmeddelande. Dessutom så måste vi kunna skicka ettstartmejl senast två veckor före kursstart.
 
@@ -74,7 +78,7 @@ När en elev eller kund köper en kurs så skall kursen lagras iprofiluppgiftern
 
 STEG 1
 Framtagning av ”Proof Of Concept”
-I detta första steg behöver vi applikation som presenterar våra kurser på ett attraktivtoch modernt sätt.oss, där besökare kan få en överblick över vad vi kan erbjuda. Vi vill dessutom ha en sida där aktuella och populära kurser presenteras. 
+I detta första steg behöver vi applikation som presenterar våra kurser på ett attraktivtoch modernt sätt.oss, där besökare kan få en överblick över vad vi kan erbjuda. Vi vill dessutom ha en sida där aktuella och populära kurser presenteras.
 På sidan som presenterar detaljer om kursen vill vi att följande information finns:
 
 • Kurstitel
@@ -82,7 +86,7 @@ På sidan som presenterar detaljer om kursen vill vi att följande information f
 • Antal dagar som kursen är
 • Om den finns tillgänglig som klassrum och eller distanskurs
 • En bild som representerar kursen
-• Datum då kursen är planerad att genomföras 
+• Datum då kursen är planerad att genomföras
 • En möjlighet att boka sig för kursen via klassrum eller distans
 
 Vid bokning av en kurs så måste användaren/kunden logga in eller skapa ett konto. På bokningssidan ska följande information anges.
@@ -103,7 +107,7 @@ Vi behöver en applikation som ger oss tillgång till att lägga till nya kurser
 • Antal dagar som kursen är
 • Kostnad för kursen
 
-Dessutom behöver vi tillgång till attkunnalista vilka kundersom har bokat sig på respektive kurs.
+Dessutom behöver vi tillgång till att kunna lista vilka kunder som har bokat sig på respektive kurs.
 
 ///////////////////////////////////////////////////////////////////////////////////////////
 

@@ -1,82 +1,106 @@
 {
   "courses": [
     {
-      "id": 301,
+      "id": "301",
       "name": "Blockchain Development",
       "description": "Learn how to build decentralized applications. With this course you will learn how to build a full stack web and mobile application using the Ethereum blockchain. This course will also cover smart contracts and the Ethereum ecosystem.",
-      "duration": "8 weeks",
+      "duration": "56 days",
+      "startDate": "25-05-2024",
+      "location": "Gothemburg",
       "teacherId": 102,
       "averageRating": 5,
+      "price": 4995,
       "imageUrl": "Blockchain.jpg",
       "url": "blockchain-development"
     },
     {
-      "id": 302,
+      "id": "302",
       "name": "Cloud Computing",
       "description": "In this course, you will learn how to build a web application and deploy it to the cloud. You will also learn how to build a mobile application and deploy it to the cloud.",
-      "duration": "8 weeks",
+      "duration": "56 days",
+      "startDate": "25-05-2024",
+      "location": "Gothemburg",
       "teacherId": 101,
       "averageRating": 4.5,
+      "price": 4995,
       "imageUrl": "CloudComputing1.jpg",
       "url": "cloud-computing"
     },
     {
-      "id": 303,
+      "id": "303",
       "name": "Cybersecurity Fundamentals",
       "description": "This course is designed for beginners who want to learn about cybersecurity. In this course you will learn about different types of attacks and how to prevent them.",
-      "duration": "8 weeks",
+      "duration": "56 days",
+      "startDate": "25-05-2024",
+      "location": "Gothemburg",
       "teacherId": 101,
       "averageRating": 4.5,
+      "price": 4995,
       "imageUrl": "Cybersecurity.jpg",
       "url": "cybersecurity-fundamentals"
     },
     {
-      "id": 304,
+      "id": "304",
       "name": "Product Management",
       "description": "Good developers need great leaders. In this course, you will learn how to become a great leader. You will also learn how to become a great developer.",
-      "duration": "8 weeks",
+      "duration": "56 days",
+      "startDate": "25-05-2024",
+      "location": "Gothemburg",
       "teacherId": 102,
       "averageRating": 4.5,
+      "price": 4995,
       "imageUrl": "Product_Management.jpg",
       "url": "product-management"
     },
     {
-      "id": 341,
+      "id": "341",
       "name": "Cybersecurity Fundamentals | Remote",
       "description": "This remote course is designed for beginners who want to learn about cybersecurity. In this course you will learn about different types of attacks and how to prevent them.",
-      "duration": "8 weeks",
+      "duration": "56 days",
+      "startDate": "25-05-2024",
+      "location": "Gothemburg",
       "teacherId": 101,
       "averageRating": 4.5,
+      "price": 9995,
       "imageUrl": "Cybersecurity2.jpg",
       "url": "cybersecurity-fundamentals-remote"
     },
     {
-      "id": 342,
+      "id": "342",
       "name": "Digital Marketing | Remote",
       "description": "Quality products does not sell itself. In this remote course, you will learn how to sell your products.",
-      "duration": "8 weeks",
+      "duration": "56 days",
+      "startDate": "25-05-2024",
+      "location": "Remote",
       "teacherId": 103,
       "averageRating": 4.5,
+      "price": 9995,
       "imageUrl": "DigitalMarketing1.jpg",
       "url": "digital-marketing-remote"
     },
     {
-      "id": 343,
+      "id": "343",
       "name": "IT Automation | Remote",
       "description": "In this remote course, you will learn how to automate your processes.",
-      "duration": "8 weeks",
+      "duration": "56 days",
+      "startDate": "25-05-2024",
+      "location": "Remote",
       "teacherId": 102,
       "averageRating": 4.5,
+      "price": 9995,
       "imageUrl": "IT Automation2.jpg",
       "url": "it-automation-remote"
     },
     {
-      "id": 344,
+      "id": "344",
       "name": "Test Automation | Remote",
       "description": "In this remote course, you will learn how to automate your processes.",
-      "duration": "18 weeks",
+      "duration": "56 days",
+      "startDate": "25-05-2024",
+      "location": "Remote",
       "teacherId": 102,
       "averageRating": 4.5,
+      "price": 9995,
       "imageUrl": "IT AutomationX.jpg",
       "url": "test-automation-remote"
     }
@@ -85,7 +109,9 @@
     {
       "id": 1001,
       "name": "Rowel Malmström",
+      "address": "Storgatan 1, Emmaboda",
       "email": "rowel.malmstrom@gmail.com",
+      "telephone": "0765498722",
       "courses": [
         {
           "id": 302,
@@ -105,7 +131,9 @@
     {
       "id": 1002,
       "name": "Hedi Gardi",
+      "address": "Riksgatan 11, Oslo",
       "email": "Hedi.gardi@gmail.com",
+      "telephone": "0865498722",
       "courses": [
         {
           "id": 302,
@@ -125,7 +153,9 @@
     {
       "id": 1003,
       "name": "Toni Luna",
+      "address": "Nygatan 37, Falkenberg",
       "email": "toni.luna@gmail.com",
+      "telephone": "0725498722",
       "courses": [
         {
           "id": 302,
