@@ -1,17 +1,16 @@
 {
   "courses": [
     {
-      "id": "301",
       "name": "Blockchain Development",
       "description": "Learn how to build decentralized applications. With this course you will learn how to build a full stack web and mobile application using the Ethereum blockchain. This course will also cover smart contracts and the Ethereum ecosystem.",
       "duration": "56 days",
-      "startDate": "25-05-2024",
+      "startDate": "2024-04-27",
       "location": "Gothenburg",
-      "teacherId": 102,
-      "averageRating": 5,
-      "price": 4995,
+      "teacherId": "102",
+      "price": "4995",
+      "url": "blockchain-development",
       "imageUrl": "Blockchain.jpg",
-      "url": "blockchain-development"
+      "id": "301"
     },
     {
       "name": "Cloud Computing",
@@ -102,6 +101,30 @@
       "price": 9995,
       "imageUrl": "IT AutomationX.jpg",
       "url": "test-automation-remote"
+    },
+    {
+      "name": "Test",
+      "description": "Testiitititiit",
+      "duration": "99",
+      "startDate": "2024-11-11",
+      "location": "Remote",
+      "teacherId": "7001",
+      "price": "1234",
+      "url": "http://test.com",
+      "imageUrl": "SocialMedia1.jpg",
+      "id": "M7DLxgL"
+    },
+    {
+      "name": "TestName",
+      "description": "TestDesc",
+      "duration": "TestDuration",
+      "startDate": "2024-04-26",
+      "location": "Remote",
+      "teacherId": "7003",
+      "price": "9876",
+      "url": "course-name",
+      "imageUrl": "DigitalMarketing2.jpg",
+      "id": "UWSurma"
     }
   ],
   "students": [
