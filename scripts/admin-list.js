@@ -8,81 +8,11 @@ const studentsGallery = document.querySelector('#students-gallery');
 const teachersGallery = document.querySelector('#teachers-gallery');
 // const deleteButton = document.querySelector('#delete');
 const editButton = document.querySelectorAll('.delete-button'); // Now is class="delete-button"
-console.log(editButton);
-// async function initPage() {
-//     // Load data
-//     const courses = await listAllCourses();
-//     //     const teachers = await listAllTeachers();
-//     courses.forEach((course) => {
-//         // Add courses to page
-//         coursesGallery.appendChild(createCard(course));
-//         // Add a delete button
-//         const button = document.createElement('button');
-//         button.classList.add('delete-button');
-//         button.setAttribute('id', course.id);
-//         button.textContent = 'Delete';
-//         coursesGallery.appendChild(button);
-//     });
 
-//     const students = await listAllStudents();
-//     students.forEach((student) => {
-//         // Add students to page
-//         studentsGallery.appendChild(createCardS(student));
-//         // Add a delete button
-//         const button = document.createElement('button');
-//         button.classList.add('delete-button');
-//         button.setAttribute('id', student.id);
-//         button.textContent = 'Delete';
-//         studentsGallery.appendChild(button);
-//     })
-
-//     const teachers = await listAllTeachers();
-//     teachers.forEach((teacher) => {
-//         // Add teachers to page
-//         teachersGallery.appendChild(createCardT(teacher));
-//         // Add a delete button
-//         const button = document.createElement('button');
-//         button.classList.add('delete-button');
-//         button.setAttribute('id', teacher.id);
-//         button.textContent = 'Delete';
-//         teachersGallery.appendChild(button);    })
-
-//     // Render data. Fetched from db.json and displayed on the page.
-//     const images = document.querySelectorAll('.course-image img, .student-image img, .teacher-image img');
-//     addImageClickHandler(images);
-
-//     // Go through all the elements and add a click event listener
-//     cards.forEach((card) => {
-//         card.addEventListener('click', selectedCourse);
-//     });
-
-// };
-
-// const listAllCourses = async () => {
-//     // Function to fetch courses data from db.json
-//     const url = 'http://localhost:3000/courses';
-//     // Indicating where to get the data from (above)
-//     const response = await fetch(url);
-//     // Indicating what to do with the data (above)
-//     if (response.ok) {
-//         const result = await response.json();
-//         // Saving the result in a variable. Using await to wait for the data to be fetched
-//         return result;
-//     } else {
-//         throw new Error(`Network response was not ok. Error: ${response.status} ${response.statusText}`);
-//         // Error handling and rendering a message for the user, and debugging.
-//     }
-// // AI Suggestion: Use fetch to fetch data from db.json
-//     // return fetch('db.json')
-//     //     .then(res => res.json())
-//     //     .then(data => data.courses);
-// };
-
-// NEW initPage
 const initPage = async () => {
-    const url = 'http://localhost:3000/courses';
+    const url = 'http://localhost:3000';
     const http = new HttpClient(url);
-    const courses = await http.get(url);
+    const courses = await http.get('courses');
 
     // const courses = await http.get();
     updateCourseList(courses, document.querySelector('#courses-gallery'));
@@ -136,36 +66,6 @@ const listAllTeachers = async () => {
     }
 }
 
-// function createCourse(course) {
-//     const courseCard = createCard(course);
-//     courseCard.addEventListener('click', selectedCourse);
-//     courseCard.querySelector('.delete-button').addEventListener('click', deleteCourse);
-
-//     courseCard.querySelector('.edit-button').addEventListener('click', editCourse);
-//     courseCard.querySelector('.view-button').addEventListener('click', viewCourse);
-//     courseCard.querySelector('.view-students-button').addEventListener('click', viewStudents);
-//     courseCard.querySelector('.view-teachers-button').addEventListener('click', viewTeachers);
-//     courseCard.querySelector('.add-student-button').addEventListener('click', addStudent);
-//     courseCard.querySelector('.add-teacher-button').addEventListener('click', addTeacher);
-//     courseCard.querySelector('.add-course-button').addEventListener('click', addCourse);
-//     courseCard.querySelector('.add-image-button').addEventListener('click', addImage);
-//     courseCard.querySelector('.delete-image-button').addEventListener('click', deleteImage);
-//     courseCard.querySelector('.view-image-button').addEventListener('click', viewImage);
-//     courseCard.querySelector('.edit-image-button').addEventListener('click', editImage);
-
-//     return courseCard;
-// }
-
-
-
-// I shouldn't need the code below
-
-// const getCourse = async (id) => {
-//     const url = `http://localhost:3000/courses/${id}`;
-//     const http = new HttpClient(url);
-//     const course = await http.get();
-// }
-
 const deleteCourse = async () => {
     // e.preventDefault(); // Prevent the form from submitting
     const url = `http://localhost:3000/courses/${id}`;
@@ -180,7 +80,7 @@ const deleteCourse = async () => {
 // Get ready these functions when the document is ready
 
 document.addEventListener('DOMContentLoaded', initPage);
-editButton.addEventListener('submit', selectedCourse);
+// editButton.addEventListener('submit', selectedCourse);
 // This function must be add on edit-course.html
 // deleteButton.addEventListener('click', deleteCourse);
 
