@@ -23,17 +23,17 @@
     </header>
     <main>
       <h1>Communications</h1>
-      <section class="email">
+      <section class="email flex column">
         <h2 id="email"></h2>
         <form id="emailForm">
           <input type="email" name="email" id="emailInput" />
           <textarea name="message" id="messageInput"></textarea>
-          <input type="submit" value="Submit" />
+          <input class="btn" type="submit" value="Submit" />
       </section>
 
       <section class="chat">
         <h2 id="chat"></h2>
-        <div id="chatMessages"></div>
+        <div id="chatMessages flex column"></div>
         <form id="chatForm">
             <div id="chat-messages">
                 <div class="message">You: Hello John Doe! How is it going with the course?</div>
@@ -42,7 +42,7 @@
           <input type="text" name="name" id="chatName" />
           <input type="email" name="email" id="chatEmail" />
           <input type="text" name="message" id="chatInput" />
-          <input type="submit" value="Submit" />
+          <input class="btn" type="submit" value="Submit" />
       </section>
     </main>
     <footer id="footer">

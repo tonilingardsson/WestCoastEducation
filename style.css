@@ -27,16 +27,18 @@ a:hover {
 
 .btn {
     color: black;
+    row-gap: 1rem;
     border: 1px solid gray;
     border-radius: 0.5rem;
     padding: 0.5rem 1rem;
-    background-color: gray;
+    margin: auto;
+    background-color: burlywood;
     transition: color 0.3s ease;
     font-weight: bold;
 }
 
 .btn:hover {
-    background-color: green;
+    background-color: lightgreen;
     border: 1px solid green;
     border-radius: 0.5rem;
     padding: 0.5rem 1rem;
@@ -46,10 +48,12 @@ a:hover {
 
 .btn-danger {
     color: black;
-    border: 1px solid red;
+    border: 1px solid black;
     border-radius: 0.5rem;
     padding: 0.5rem 1rem;
-    background-color: red;
+    margin: auto;
+    margin-right: 0;
+    background-color: lightsteelblue;
     transition: color 0.3s ease;
     font-weight: bold;
 
@@ -57,10 +61,18 @@ a:hover {
 
 .btn-danger:hover {
     color: black;
-    background-color: orange;
-    border: 1px solid orange;
+    background-color: red;
+    border: 1px solid black;
 
     transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+.edit-btn {
+    margin-right: 5em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+
     font-weight: bold;
 }
 
@@ -87,6 +99,29 @@ button.edit-button:hover {
     transition: none 1s ease-in-out 1s;
     /* transition: background-color cubic-bezier(0.075, 0.82, 0.165, 1); */
     font-weight: bold;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.emailForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0 auto;
+    max-width: 10rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .form-control {
