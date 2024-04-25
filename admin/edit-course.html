@@ -14,7 +14,6 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../style.css" />
-    <!-- <script src="../scripts/edit-course.js" async defer></script> -->
     <script type="module" src="../lib/components/adminHeader.js" defer></script>
     <script type="module" src="../lib/components/footer.js" defer></script>
     <script type="module" src="../lib/func/manageCourses.js" defer></script>
@@ -24,6 +23,10 @@
     <main>
       <section class="add-course container">
         <h1 class="page-title">Add course</h1>
+        <p id="message">
+          To <strong>add</strong> a course, simply fill the form and click save.
+          Update instructions below the form.
+        </p>
 
         <form id="courseForm">
           <div class="form-control">
@@ -50,7 +53,25 @@
               type="text"
               name="duration"
               id="courseDuration"
-              placeholder="Write number of weeks"
+              placeholder="Write number of days"
+            />
+          </div>
+          <div class="form-control">
+            <label for="startDate">Start date</label>
+            <input
+              type="date"
+              name="startDate"
+              id="startDate"
+              placeholder="Write start date"
+            />
+          </div>
+          <div class="form-control">
+            <label for="location">Location</label>
+            <input
+              type="text"
+              name="location"
+              id="location"
+              placeholder="Write the city or Remote"
             />
           </div>
           <div class="form-control">
@@ -63,12 +84,22 @@
             />
           </div>
           <div class="form-control">
-            <label for="averageRate">Average rate</label>
+            <label for="price">Course price</label>
             <input
               type="text"
-              name="averageRating"
-              id="averageRate"
-              placeholder="Write its average rate"
+              name="price"
+              id="coursePrice"
+              placeholder="Write its price in $USD"
+            />
+          </div>
+          <div class="form-control">
+            <label for="url">Course URL</label>
+            <input
+              type="text"
+              name="url"
+              id="courseUrl"
+              src=""
+              placeholder="Type: https://example.com"
             />
           </div>
           <div class="form-control">
@@ -90,6 +121,10 @@
               </button>
             </div>
           </div>
+          <p id="message">
+            To <strong>update</strong> a existing course: click on edit button,
+            do the changes and click save.
+          </p>
         </form>
       </section>
       <section id="updateCourseList"></section>
