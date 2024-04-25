@@ -14,17 +14,13 @@
       "url": "blockchain-development"
     },
     {
-      "id": "302",
       "name": "Cloud Computing",
       "description": "In this course, you will learn how to build a web application and deploy it to the cloud. You will also learn how to build a mobile application and deploy it to the cloud.",
       "duration": "56 days",
-      "startDate": "25-05-2024",
-      "location": "Gothemburg",
-      "teacherId": 101,
-      "averageRating": 4.5,
-      "price": 4995,
-      "imageUrl": "CloudComputing1.jpg",
-      "url": "cloud-computing"
+      "teacherId": "101",
+      "averageRating": "",
+      "imageUrl": "",
+      "id": "302"
     },
     {
       "id": "303",
