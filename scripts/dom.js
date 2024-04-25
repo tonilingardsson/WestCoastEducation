@@ -7,7 +7,7 @@ export const createCourseCard = (course, type = 'info') => {
     container.appendChild(createImage(course.imageUrl, course.id));
 
     const details = document.createElement('p');
-    details.appendChild(document.createTextNode(`${course.name} - ${course.duration} - Rating: ${course.averageRating}/5`));
+    details.appendChild(document.createTextNode(`${course.name} - Location: ${course.location} - Start date: ${course.startDate} - Duration: ${course.duration} - Price: ${course.price} € - Course ID: ${course.id}`));
     container.appendChild(details);
 
     const description = document.createElement('p');

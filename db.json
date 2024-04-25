@@ -6,7 +6,7 @@
       "description": "Learn how to build decentralized applications. With this course you will learn how to build a full stack web and mobile application using the Ethereum blockchain. This course will also cover smart contracts and the Ethereum ecosystem.",
       "duration": "56 days",
       "startDate": "25-05-2024",
-      "location": "Gothemburg",
+      "location": "Gothenburg",
       "teacherId": 102,
       "averageRating": 5,
       "price": 4995,
@@ -17,9 +17,12 @@
       "name": "Cloud Computing",
       "description": "In this course, you will learn how to build a web application and deploy it to the cloud. You will also learn how to build a mobile application and deploy it to the cloud.",
       "duration": "56 days",
+      "startDate": "25-05-2024",
+      "location": "Gothenburg",
       "teacherId": "101",
-      "averageRating": "",
-      "imageUrl": "",
+      "averageRating": "4.5",
+      "price": 4995,
+      "imageUrl": "CloudComputing1.jpg",
       "id": "302"
     },
     {
@@ -28,7 +31,7 @@
       "description": "This course is designed for beginners who want to learn about cybersecurity. In this course you will learn about different types of attacks and how to prevent them.",
       "duration": "56 days",
       "startDate": "25-05-2024",
-      "location": "Gothemburg",
+      "location": "Gothenburg",
       "teacherId": 101,
       "averageRating": 4.5,
       "price": 4995,
@@ -41,7 +44,7 @@
       "description": "Good developers need great leaders. In this course, you will learn how to become a great leader. You will also learn how to become a great developer.",
       "duration": "56 days",
       "startDate": "25-05-2024",
-      "location": "Gothemburg",
+      "location": "Gothenburg",
       "teacherId": 102,
       "averageRating": 4.5,
       "price": 4995,
@@ -50,11 +53,11 @@
     },
     {
       "id": "341",
-      "name": "Cybersecurity Fundamentals | Remote",
+      "name": "Cybersecurity Fundamentals",
       "description": "This remote course is designed for beginners who want to learn about cybersecurity. In this course you will learn about different types of attacks and how to prevent them.",
       "duration": "56 days",
       "startDate": "25-05-2024",
-      "location": "Gothemburg",
+      "location": "Remote",
       "teacherId": 101,
       "averageRating": 4.5,
       "price": 9995,
@@ -63,7 +66,7 @@
     },
     {
       "id": "342",
-      "name": "Digital Marketing | Remote",
+      "name": "Digital Marketing",
       "description": "Quality products does not sell itself. In this remote course, you will learn how to sell your products.",
       "duration": "56 days",
       "startDate": "25-05-2024",
@@ -76,7 +79,7 @@
     },
     {
       "id": "343",
-      "name": "IT Automation | Remote",
+      "name": "IT Automation",
       "description": "In this remote course, you will learn how to automate your processes.",
       "duration": "56 days",
       "startDate": "25-05-2024",
@@ -89,7 +92,7 @@
     },
     {
       "id": "344",
-      "name": "Test Automation | Remote",
+      "name": "Test Automation",
       "description": "In this remote course, you will learn how to automate your processes.",
       "duration": "56 days",
       "startDate": "25-05-2024",
@@ -99,33 +102,6 @@
       "price": 9995,
       "imageUrl": "IT AutomationX.jpg",
       "url": "test-automation-remote"
-    },
-    {
-      "name": "56 days",
-      "description": "In this remote course, you will learn how to automate your processes.",
-      "duration": "",
-      "teacherId": "102",
-      "averageRating": "",
-      "imageUrl": "",
-      "id": "wc57E6A"
-    },
-    {
-      "name": "Cloud Computing",
-      "description": "In this course, you will learn how to build a web application and deploy it to the cloud. You will also learn how to build a mobile application and deploy it to the cloud.",
-      "duration": "56 days",
-      "teacherId": "103",
-      "averageRating": "",
-      "imageUrl": "",
-      "id": "A_xOquh"
-    },
-    {
-      "name": "sdljfaskj",
-      "description": "ldsjlaksfj",
-      "duration": "lksjfalskfj",
-      "teacherId": "303",
-      "averageRating": "3",
-      "imageUrl": "",
-      "id": "qeOgr86"
     }
   ],
   "students": [
